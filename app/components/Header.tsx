@@ -80,7 +80,11 @@ export const Header = () => {
               stroke=""
               strokeWidth={6}
               filter={`drop-shadow(${logoHovered ? 10 : 3}px 5px 2px rgb(${logoHovered ? "20 20 20" : "20 20 20"} / ${logoHovered ? 1 : 0.2}))`}
-              style={{ transition: "all 500ms" }}
+              style={{
+                transition: "all 500ms",
+                transform: logoHovered ? "translateX(-2px)" : "",
+                transitionDuration: "500ms",
+              }}
             />
           </div>
         </Link>
