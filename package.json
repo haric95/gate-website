@@ -1,0 +1,40 @@
+{
+  "name": "nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/gl-react": "^3.15.8",
+    "@types/gl-react-dom": "^3.15.8",
+    "framer-motion": "^12.4.7",
+    "gl-react": "^5.2.0",
+    "gl-react-dom": "^5.2.1",
+    "next": "15.0.3",
+    "prettier": "^3.5.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-markdown": "^10.0.0",
+    "react-player": "^2.16.0",
+    "react-shaders": "^0.0.4",
+    "remark-breaks": "^4.0.0",
+    "swiper": "^11.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.20.1",
+    "eslint-config-next": "15.0.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5"
+  }
+}

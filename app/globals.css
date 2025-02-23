@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Microgramma;
+  src: url(./fonts/Microgramma-D-OT-Bold-Extended.ttf);
+}
+
+* {
+  font-family: Microgramma;
+}
+
+button, a {
+  text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+  letter-spacing: 0.06em;
+  color: #aaaaaa;
+  transition: all 500ms;
+}
+
+.greenhov:hover, .greenhov:hover, button.greenhov.active, a.greenhov.active {
+  color: #3bab07;
+  text-shadow: rgba(255,255,255,0.5) 0px 6px 3px;
+}
+
+.bluehov:hover, .bluehov:hover, button.bluehov.active, a.bluehov.active {
+  color: #0798ab;
+  text-shadow: rgba(255,255,255,0.5) 0px 6px 3px;
+}
+
+redhov:hover, redhov:hover, button.redhov.active, a.redhov.active {
+  color: #ab0707;
+  text-shadow: rgba(255,255,255,0.5) 0px 6px 3px;
+}
+
+.title {
+  /* color: #222222;
+  text-shadow: 0px 4px 4px #fff, 0 0 0 #000, 0px 4px 4px #fff; */
+  letter-spacing: 0.06em;
+  /* text-shadow: rgba(255,255,255,0.6) 0px 2px 2px; */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  position: relative;
+}
+
+p {
+  font-family: var(--font-mono);
+}
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #080808;
+  overflow-x: hidden;
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: #3bab07;
+  color: transparent;
+  text-shadow: rgba(255,255,255,0.5) 0px 6px 3px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+::selection {
+  background: #3bab07;
+  color: rgba(0, 0, 0, 1.0);
+  text-shadow: rgba(255,255,255,0.5) 0px 2px 4px;
+  color: rgba(0, 0, 0, 0.0);
+}
+
+.strokeme {
+  color: #080808;
+  background-color: #080808;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  transition: all 500ms;
+}
+
+.strokeme.green {
+  color: #080808;
+  background-color: #080808;
+  text-shadow: -1px -1px 0 #3bab07, 1px -1px 0 #3bab07, -1px 1px 0 #3bab07, 1px 1px 0 #3bab07;
+}
+
+.strokeme.green:hover, .strokeme.green.active {
+  transform: translateY(-2px);
+  text-shadow: -1px -1px 0 #3bab07, 1px -1px 0 #3bab07, -1px 3px 0 #3bab07, 1px 3px 0 #3bab07;
+}
+
+.strokeme.blue {
+  color: #080808;
+  background-color: #080808;
+  text-shadow: -1px -1px 0 #0798ab, 1px -1px 0 #0798ab, -1px 1px 0 #0798ab, 1px 1px 0 #0798ab;
+}
+
+.strokeme.blue:hover, .strokeme.blue.active {
+  transform: translateY(-2px);
+  text-shadow: -1px -1px 0 #0798ab, 1px -1px 0 #0798ab, -1px 3px 0 #0798ab, 1px 3px 0 #0798ab;
+}
+
+.strokeme.red {
+  transition: all 500ms;
+  color: #080808;
+  background-color: #080808;
+  text-shadow: -1px -1px 0 #ab0707, 1px -1px 0 #ab0707, -1px 1px 0 #ab0707, 1px 1px 0 #ab0707;
+}
+
+.strokeme.red:hover, .strokeme.red.active {
+  transform: translateY(-2px);
+  text-shadow: -1px -1px 0 #ab0707, 1px -1px 0 #ab0707, -1px 3px 0 #ab0707, 1px 3px 0 #ab0707;
+}
