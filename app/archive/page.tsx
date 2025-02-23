@@ -106,6 +106,7 @@ export default function Home() {
                         <div>
                           <h1
                             className="text-[36px] title leading-[36px] strokeme"
+                            style={{ wordWrap: "break-word" }}
                             title={event.title}
                           >
                             {event.title}
@@ -144,7 +145,7 @@ export default function Home() {
             <motion.div
               key={"radio"}
               {...DEFAULT_TRANSITION}
-              className="w-full px-16"
+              className="w-full md:px-16 px-4"
             >
               <div
                 {...DEFAULT_TRANSITION}
@@ -179,22 +180,23 @@ export default function Home() {
                       {ARCHIVE_DATA.radio.mixgate.map((radio) => {
                         return (
                           <div
-                            className="md:w-full w-[240px] transition-all duration-500"
+                            className="md:w-full w-full transition-all duration-500"
                             key={radio.title}
                           >
                             <hr className="color-white border-color-white w-full mb-8" />
-                            <div className="flex w-full transition-all justify-between items-between">
-                              <div className="w-1/2 mr-8 flex items-center justify-center">
+                            <div className="flex md:flex-row flex-col w-full transition-all justify-between items-between">
+                              <div className="md:w-1/2 w-full md:mr-8 mb-4 md:mb-0 flex items-center justify-center">
                                 <img
                                   className="max-h-[480px]"
                                   src={radio.coverUrl}
                                   alt={`${radio.title} Poster`}
                                 />
                               </div>
-                              <div className="w-1/2 flex flex-col justify-between">
+                              <div className="md:w-1/2 w-full flex flex-col justify-between">
                                 <div>
                                   <h1
-                                    className="text-[36px] title leading-[36px] strokeme"
+                                    className="text-[36px] title leading-[36px] strokeme "
+                                    style={{ wordWrap: "break-word" }}
                                     title={radio.title}
                                   >
                                     {radio.title}
@@ -232,22 +234,23 @@ export default function Home() {
                       {ARCHIVE_DATA.radio.threads.map((radio) => {
                         return (
                           <div
-                            className="md:w-full w-[240px] transition-all duration-500"
+                            className="md:w-full w-full transition-all duration-500"
                             key={radio.title}
                           >
                             <hr className="color-white border-color-white w-full mb-8" />
-                            <div className="flex w-full transition-all justify-between items-between">
-                              <div className="w-1/2 mr-8 flex items-center justify-center">
+                            <div className="flex md:flex-row flex-col w-full transition-all justify-between items-between">
+                              <div className="md:w-1/2 w-full md:mr-8 mb-4 md:mb-0 flex items-center justify-center">
                                 <img
                                   className="max-h-[480px]"
                                   src={radio.coverUrl}
                                   alt={`${radio.title} Poster`}
                                 />
                               </div>
-                              <div className="w-1/2 flex flex-col justify-between">
+                              <div className="md:w-1/2 w-full flex flex-col justify-between">
                                 <div>
                                   <h1
-                                    className="text-[36px] title leading-[36px] strokeme"
+                                    className="text-[36px] title leading-[36px] strokeme "
+                                    style={{ wordWrap: "break-word" }}
                                     title={radio.title}
                                   >
                                     {radio.title}
@@ -264,6 +267,9 @@ export default function Home() {
                                   </div>
                                 </div>
                                 <ReactPlayer
+                                  fallback={
+                                    <div className="bg-red-500 w-full h-full" />
+                                  }
                                   height={160}
                                   width={"100%"}
                                   url={radio.url}
@@ -285,28 +291,29 @@ export default function Home() {
             <motion.div
               key={"workshops"}
               {...DEFAULT_TRANSITION}
-              className="w-full px-16"
+              className="w-full md:px-16 px-4"
             >
               {ARCHIVE_DATA.workshops.map((workshop) => {
                 return (
                   <div
-                    className="md:w-full w-[240px] transition-all duration-500"
+                    className="md:w-full w-full transition-all duration-500"
                     key={workshop.title}
                   >
                     <hr className="color-white border-color-white w-full mb-8" />
-                    <div className="flex w-full transition-all justify-between items-between">
-                      <div className="w-1/2 mr-8 flex items-center justify-center">
+                    <div className="flex md:flex-row flex-col w-full transition-all justify-between items-between">
+                      <div className="md:w-1/2 w-full md:mr-8 mb-4 md:mb-0 flex items-center justify-center">
                         <img
                           className="max-h-[480px]"
                           src={workshop.coverUrl}
                           alt={`${workshop.title} Poster`}
                         />
                       </div>
-                      <div className="w-1/2 flex flex-col justify-between">
+                      <div className="md:w-1/2 w-full flex flex-col justify-between">
                         <div>
                           <h1
                             className="text-[36px] title leading-[36px] strokeme"
                             title={workshop.title}
+                            style={{ wordWrap: "break-word" }}
                           >
                             {workshop.title}
                           </h1>
