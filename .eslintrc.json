@@ -11,6 +11,7 @@
         "jsx": true
       }
     },
+    "parser": "@typescript-eslint/parser",
     "plugins": ["react", "react-hooks"],
     "rules": {
       //add customize rules here as per your project's needs
