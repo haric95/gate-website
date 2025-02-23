@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useRef, useState } from "react";
-import { useComponentSize } from "../hooks/useComponentSize";
-import { Logo } from "./Logo";
-import { Shader } from "react-shaders";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useRef, useState } from "react";
+import { Shader } from "react-shaders";
+import { useComponentSize } from "../hooks/useComponentSize";
 import { useIsMobile } from "../hooks/useIsMobile";
+import { Logo } from "./Logo";
 const LetterPositioning = dynamic(() => import("./LetterPositioning"), {
   ssr: false,
 });

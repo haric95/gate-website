@@ -1,6 +1,5 @@
 "use client";
-import { Props } from "next/script";
-import React, { PropsWithChildren, useMemo, useState } from "react";
+import { useMemo } from "react";
 
 type LetterPositioningProps = {
   children: string | null | undefined;

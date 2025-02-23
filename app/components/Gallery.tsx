@@ -1,9 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { A11y, Navigation } from "swiper/modules";
+import { useCallback, useContext, useEffect, useRef, useState } from "react";
 import Swooper from "swiper";
-import { SwiperSlide, Swiper, SwiperRef } from "swiper/react";
+import { A11y, Navigation } from "swiper/modules";
+import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 import { DEFAULT_TRANSITION } from "../consts";
-import { useRef, useCallback, useContext, useEffect, useState } from "react";
 import { GlobalContext } from "../state/GlobalState";
 
 type GalleryProps = {};

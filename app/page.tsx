@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import ReactPlayer from "react-player";
 import dynamic from "next/dynamic";
 import WordRepeat from "./components/WordRepeat";
 const MEGATV = dynamic(() => import("./components/MEGATV"), {
@@ -17,7 +15,7 @@ const LetterPositioning = dynamic(
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-16">
-      <h1 className="text-center text-[32px] mb-4 title strokeme">
+      <h1 className="text-cente r text-[32px] mb-4 title strokeme">
         <WordRepeat>
           <LetterPositioning>Feed</LetterPositioning>
         </WordRepeat>

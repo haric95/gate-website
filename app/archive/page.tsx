@@ -6,11 +6,11 @@ import { ARCHIVE_DATA } from "../archiveData";
 import dynamic from "next/dynamic";
 import { useContext, useState } from "react";
 import remarkBreaks from "remark-breaks";
-import { PreviewGallery } from "../components/PreviewGallery";
-import { DEFAULT_TRANSITION } from "../consts";
-import WordRepeat from "../components/WordRepeat";
-import { GlobalContext } from "../state/GlobalState";
 import { Gallery } from "../components/Gallery";
+import { PreviewGallery } from "../components/PreviewGallery";
+import WordRepeat from "../components/WordRepeat";
+import { DEFAULT_TRANSITION } from "../consts";
+import { GlobalContext } from "../state/GlobalState";
 const ReactPlayer = dynamic(() => import("react-player"), {
   ssr: false,
 });
@@ -211,6 +211,9 @@ export default function Home() {
                                   </div>
                                 </div>
                                 <ReactPlayer
+                                  fallback={
+                                    <div className="bg-red-500 w-full h-full" />
+                                  }
                                   height={160}
                                   width={"100%"}
                                   url={radio.url}

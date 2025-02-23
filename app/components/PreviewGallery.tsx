@@ -1,6 +1,6 @@
-import React, { useCallback, useContext, useRef } from "react";
+import { useCallback, useContext, useRef } from "react";
+import { A11y, Navigation } from "swiper/modules";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";

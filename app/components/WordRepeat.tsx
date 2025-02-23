@@ -1,5 +1,4 @@
-import { Props } from "next/script";
-import React, { PropsWithChildren, ReactNode, useMemo, useState } from "react";
+import { ReactNode } from "react";
 
 type WordRepeatProps = {
   children: ReactNode | null | undefined;

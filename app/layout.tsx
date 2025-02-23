@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Share_Tech_Mono } from "next/font/google";
-import React, { createContext, useState } from "react";
+import React from "react";
 import { Header } from "./components/Header";
 import { LayoutTransition } from "./components/LayoutTransition";
 import { DEFAULT_TRANSITION } from "./consts";
