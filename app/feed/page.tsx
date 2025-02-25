@@ -25,7 +25,7 @@ export default function Home() {
       {/* <ShaderBackground /> */}
 
       <div className="fixed w-screen h-screen z-[-1] top-0"></div>
-      <h1 className="text-cente r text-[32px] mb-4 title strokeme">
+      <h1 className="text-center text-[32px] mb-4 title strokeme green">
         <WordRepeat>
           <LetterPositioning>Feed</LetterPositioning>
         </WordRepeat>

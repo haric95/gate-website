@@ -93,33 +93,33 @@ body {
 .strokeme.green {
   color: #080808;
   background-color: #080808;
-  text-shadow: -1px -1px 0 #3bab07, 1px -1px 0 #3bab07, -1px 1px 0 #3bab07, 1px 1px 0 #3bab07;
+  text-shadow: -1px -1px 0 #369d06, 1px -1px 0 #369d06, -1px 1px 0 #369d06, 1px 1px 0 #369d06;
 }
 
 .clickable.strokeme.green:hover, .strokeme.green.active {
   transform: translateY(-2px);
-  text-shadow: -1px -1px 0 #3bab07, 1px -1px 0 #3bab07, -1px 3px 0 #3bab07, 1px 3px 0 #3bab07;
+  text-shadow: -1px -1px 0 #369d06, 1px -1px 0 #369d06, -1px 3px 0 #369d06, 1px 3px 0 #369d06;
 }
 
 .strokeme.blue {
   color: #080808;
   background-color: #080808;
-  text-shadow: -1px -1px 0 #0798ab, 1px -1px 0 #0798ab, -1px 1px 0 #0798ab, 1px 1px 0 #0798ab;
+  text-shadow: -1px -1px 0 #078b9d, 1px -1px 0 #078b9d, -1px 1px 0 #078b9d, 1px 1px 0 #078b9d;
 }
 
 .clickable.strokeme.blue:hover, .strokeme.blue.active {
   transform: translateY(-2px);
-  text-shadow: -1px -1px 0 #0798ab, 1px -1px 0 #0798ab, -1px 3px 0 #0798ab, 1px 3px 0 #0798ab;
+  text-shadow: -1px -1px 0 #078b9d, 1px -1px 0 #078b9d, -1px 3px 0 #078b9d, 1px 3px 0 #078b9d;
 }
 
 .strokeme.red {
   transition: all 500ms;
   color: #080808;
   background-color: #080808;
-  text-shadow: -1px -1px 0 #ab0707, 1px -1px 0 #ab0707, -1px 1px 0 #ab0707, 1px 1px 0 #ab0707;
+  text-shadow: -1px -1px 0 #d31f08, 1px -1px 0 #d31f08, -1px 1px 0 #d31f08, 1px 1px 0 #d31f08;
 }
 
 .clickable.strokeme.red:hover, .strokeme.red.active {
   transform: translateY(-2px);
-  text-shadow: -1px -1px 0 #ab0707, 1px -1px 0 #ab0707, -1px 3px 0 #ab0707, 1px 3px 0 #ab0707;
+  text-shadow: -1px -1px 0 #d31f08, 1px -1px 0 #d31f08, -1px 3px 0 #d31f08, 1px 3px 0 #d31f08;
 }

@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center md:p-16 p-4">
       <Gallery />
-      <h1 className="text-center text-[32px] mb-4 title strokeme">
+      <h1 className="text-center text-[32px] mb-4 title strokeme blue">
         <WordRepeat>
           <LetterPositioning>Archive</LetterPositioning>
         </WordRepeat>
@@ -54,31 +54,31 @@ export default function Home() {
           className="w-full flex justify-center items-center mb-8"
         >
           <button
-            className={`bluehov ${activePage === ArchivePage.EVENTS && "active"}`}
+            className={`redhov ${activePage === ArchivePage.EVENTS && "active"}`}
             onClick={() => setActivePage(ArchivePage.EVENTS)}
           >
             <h1
-              className={`text-center text-lg title mr-4 strokeme blue ${activePage === ArchivePage.EVENTS && "active"}`}
+              className={`text-center text-lg title mr-4 strokeme red ${activePage === ArchivePage.EVENTS && "active"}`}
             >
               <LetterPositioning>Events</LetterPositioning>
             </h1>
           </button>
           <button
-            className={`bluehov ${activePage === ArchivePage.RADIO && "active"}`}
+            className={`redhov ${activePage === ArchivePage.RADIO && "active"}`}
             onClick={() => setActivePage(ArchivePage.RADIO)}
           >
             <h1
-              className={`text-center text-lg title mr-4 strokeme blue ${activePage === ArchivePage.RADIO && "active"}`}
+              className={`text-center text-lg title mr-4 strokeme red ${activePage === ArchivePage.RADIO && "active"}`}
             >
               <LetterPositioning>Radio</LetterPositioning>
             </h1>
           </button>
           <button
-            className={`bluehov ${activePage === ArchivePage.WORKSHOPS && "active"}`}
+            className={`redhov ${activePage === ArchivePage.WORKSHOPS && "active"}`}
             onClick={() => setActivePage(ArchivePage.WORKSHOPS)}
           >
             <h1
-              className={`text-center text-lg title strokeme blue ${activePage === ArchivePage.WORKSHOPS && "active"}`}
+              className={`text-center text-lg title strokeme red ${activePage === ArchivePage.WORKSHOPS && "active"}`}
             >
               <LetterPositioning>Workshops</LetterPositioning>
             </h1>
@@ -152,21 +152,21 @@ export default function Home() {
                 className="w-full flex justify-center items-center mb-8"
               >
                 <button
-                  className={`redhov ${activeRadioType == RadioType.MIXGATE && "active"}`}
+                  className={`greenhov ${activeRadioType == RadioType.MIXGATE && "active"}`}
                   onClick={() => setActiveRadioType(RadioType.MIXGATE)}
                 >
                   <h1
-                    className={`text-center text-lg title mr-4 strokeme red ${activeRadioType == RadioType.MIXGATE && "active"}`}
+                    className={`text-center text-lg title mr-4 strokeme green ${activeRadioType == RadioType.MIXGATE && "active"}`}
                   >
                     MIXGATE
                   </h1>
                 </button>
                 <button
-                  className={`redhov ${activeRadioType == RadioType.THREADS && "active"} `}
+                  className={`greenhov ${activeRadioType == RadioType.THREADS && "active"} `}
                   onClick={() => setActiveRadioType(RadioType.THREADS)}
                 >
                   <h1
-                    className={`text-center text-lg title mr-4 strokeme red ${activeRadioType == RadioType.THREADS && "active"}`}
+                    className={`text-center text-lg title mr-4 strokeme green ${activeRadioType == RadioType.THREADS && "active"}`}
                   >
                     Threads
                   </h1>
