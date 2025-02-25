@@ -96,7 +96,7 @@ body {
   text-shadow: -1px -1px 0 #3bab07, 1px -1px 0 #3bab07, -1px 1px 0 #3bab07, 1px 1px 0 #3bab07;
 }
 
-.strokeme.green:hover, .strokeme.green.active {
+.clickable.strokeme.green:hover, .strokeme.green.active {
   transform: translateY(-2px);
   text-shadow: -1px -1px 0 #3bab07, 1px -1px 0 #3bab07, -1px 3px 0 #3bab07, 1px 3px 0 #3bab07;
 }
@@ -107,7 +107,7 @@ body {
   text-shadow: -1px -1px 0 #0798ab, 1px -1px 0 #0798ab, -1px 1px 0 #0798ab, 1px 1px 0 #0798ab;
 }
 
-.strokeme.blue:hover, .strokeme.blue.active {
+.clickable.strokeme.blue:hover, .strokeme.blue.active {
   transform: translateY(-2px);
   text-shadow: -1px -1px 0 #0798ab, 1px -1px 0 #0798ab, -1px 3px 0 #0798ab, 1px 3px 0 #0798ab;
 }
@@ -119,7 +119,7 @@ body {
   text-shadow: -1px -1px 0 #ab0707, 1px -1px 0 #ab0707, -1px 1px 0 #ab0707, 1px 1px 0 #ab0707;
 }
 
-.strokeme.red:hover, .strokeme.red.active {
+.clickable.strokeme.red:hover, .strokeme.red.active {
   transform: translateY(-2px);
   text-shadow: -1px -1px 0 #ab0707, 1px -1px 0 #ab0707, -1px 3px 0 #ab0707, 1px 3px 0 #ab0707;
 }

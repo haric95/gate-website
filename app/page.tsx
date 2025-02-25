@@ -18,14 +18,27 @@ const ShaderBackground = dynamic(
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-16">
-      <div className="fixed w-screen h-screen z-[-1] top-0"></div>
-      <h1 className="text-cente r text-[32px] mb-4 title strokeme">
-        <WordRepeat>
-          <LetterPositioning>Feed</LetterPositioning>
-        </WordRepeat>
-      </h1>
-      <MEGATV />
+    <main
+      className="flex flex-col items-center justify-center p-16"
+      style={{ minHeight: "calc(100vh - 144px)" }}
+    >
+      <div className="flex flex-col items-center">
+        <h1 className="text-[32px] mb-4 title strokeme green">
+          <WordRepeat>
+            <LetterPositioning>GATE @ The Distillery N17</LetterPositioning>
+          </WordRepeat>
+        </h1>
+        <h2 className="text-[32px] mb-4 title strokeme blue">
+          <WordRepeat>
+            <LetterPositioning>18 - 04 - 25</LetterPositioning>
+          </WordRepeat>
+        </h2>
+        <h2 className="text-[32px] mb-4 title strokeme red">
+          <WordRepeat>
+            <LetterPositioning>Info Coming Soon</LetterPositioning>
+          </WordRepeat>
+        </h2>
+      </div>
     </main>
   );
 }

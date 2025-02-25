@@ -18,13 +18,13 @@ export default ({ children }: LetterPositioningProps) => {
     <>
       {children?.split("").map((char, index) => (
         <span
-          className="inline-block"
+          className="inline-block whitespace-break-spaces"
           key={index}
           style={{
             transform: `translate(${pos[index][0]}em, ${pos[index][1]}em) rotate(${Math.random() * 2}deg)`,
           }}
         >
-          {char}
+          {char === " " ? " " : char}
         </span>
       ))}
     </>
