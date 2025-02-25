@@ -5,15 +5,21 @@ import { createContext, PropsWithChildren, useState } from "react";
 export type GlobalContextType = {
   galleryIndex: number | null;
   galleryImages: string[] | null;
+  shaderHighlightedElement: Element | null;
   setGalleryIndex: React.Dispatch<React.SetStateAction<number | null>>;
   setGalleryImages: React.Dispatch<React.SetStateAction<string[] | null>>;
+  setShaderHighlightedElement: React.Dispatch<
+    React.SetStateAction<Element | null>
+  >;
 };
 
 export const GlobalContext = createContext<GlobalContextType>({
   galleryImages: null,
   galleryIndex: null,
+  shaderHighlightedElement: null,
   setGalleryImages: () => {},
   setGalleryIndex: () => {},
+  setShaderHighlightedElement: () => {},
 });
 
 export default ({ children }: PropsWithChildren) => {
@@ -21,6 +27,8 @@ export default ({ children }: PropsWithChildren) => {
     useState<GlobalContextType["galleryIndex"]>(null);
   const [galleryImages, setGalleryImages] =
     useState<GlobalContextType["galleryImages"]>(null);
+  const [shaderHighlightedElement, setShaderHighlightedElement] =
+    useState<GlobalContextType["shaderHighlightedElement"]>(null);
 
   return (
     <GlobalContext.Provider
@@ -29,6 +37,8 @@ export default ({ children }: PropsWithChildren) => {
         setGalleryIndex,
         galleryImages,
         setGalleryImages,
+        shaderHighlightedElement,
+        setShaderHighlightedElement,
       }}
     >
       {children}

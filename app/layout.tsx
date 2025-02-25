@@ -6,6 +6,7 @@ import { LayoutTransition } from "./components/LayoutTransition";
 import { DEFAULT_TRANSITION } from "./consts";
 import "./globals.css";
 import GlobalContextProvider from "./state/GlobalState";
+import dynamic from "next/dynamic";
 
 const mono = Share_Tech_Mono({
   weight: "400",
@@ -28,7 +29,7 @@ export default function RootLayout({
       <body className={`${mono.className} ${mono.variable}`}>
         <Header />
         <LayoutTransition {...DEFAULT_TRANSITION}>
-          <GlobalContextProvider>{children}</GlobalContextProvider>
+          <GlobalContextProvider>{children}</GlobalContextProvider>{" "}
         </LayoutTransition>
         <footer className="w-full h-16 flex justify-center items-center">
           <p>© GATE {new Date().getFullYear()}</p>

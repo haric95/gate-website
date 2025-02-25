@@ -1,19 +1,15 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import WordRepeat from "./components/WordRepeat";
-const MEGATV = dynamic(() => import("./components/MEGATV"), {
+import WordRepeat from "../components/WordRepeat";
+const MEGATV = dynamic(() => import("../components/MEGATV"), {
   ssr: false,
 });
 const LetterPositioning = dynamic(
-  () => import("./components/LetterPositioning"),
+  () => import("../components/LetterPositioning"),
   {
     ssr: false,
   },
-);
-const ShaderBackground = dynamic(
-  () => import("./components/ShaderBackground"),
-  {},
 );
 
 export default function Home() {
@@ -22,7 +18,7 @@ export default function Home() {
       <div className="fixed w-screen h-screen z-[-1] top-0"></div>
       <h1 className="text-cente r text-[32px] mb-4 title strokeme">
         <WordRepeat>
-          <LetterPositioning>Feed</LetterPositioning>
+          <LetterPositioning>About</LetterPositioning>
         </WordRepeat>
       </h1>
       <MEGATV />

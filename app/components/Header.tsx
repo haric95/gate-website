@@ -93,21 +93,31 @@ export const Header = () => {
         <ul className="flex justify-end text-[24px] md:mt-6 md:mr-4 mt-2 mr-2">
           <li className="mr-4">
             <Link
-              href="/"
-              className={`block strokeme green ${pathname === "/" && "active"} !bg-transparent`}
+              href="/feed"
+              className={`block strokeme green ${pathname === "/feed" && "active"} !bg-transparent`}
             >
               <h1>
                 <LetterPositioning>Feed</LetterPositioning>
               </h1>
             </Link>
           </li>
-          <li>
+          <li className="mr-4">
             <Link
               href="/archive"
               className={`block strokeme green ${pathname === "/archive" && "active"} !bg-transparent`}
             >
               <h1>
                 <LetterPositioning>Archive</LetterPositioning>
+              </h1>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/about"
+              className={`block strokeme green ${pathname === "/about" && "active"} !bg-transparent`}
+            >
+              <h1>
+                <LetterPositioning>About</LetterPositioning>
               </h1>
             </Link>
           </li>
