@@ -65,23 +65,19 @@ export const Gallery = ({}: GalleryProps) => {
                 >
                   {galleryImages?.map((image) => {
                     return (
-                      <SwiperSlide
-                        key={image.url}
-                        className="h-full !w-fit flex flex-col"
-                      >
-                        <button
-                          className="h-[95%] !w-fit"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                          }}
+                      <SwiperSlide key={image.url} className="h-full !w-fit">
+                        <div
+                          className="h-[95%] !w-fit flex justify-start items-center flex-col"
+                          onClick={() => {}}
                         >
                           <img
                             src={image.url}
-                            alt={image.alt}
-                            className="h-full"
+                            className="max-h-full max-w-full"
                           />
-                        </button>
-                        <p className="text-white h-[5%]">{image.credit}</p>
+                          <p className="h-[5%] w-full text-left">
+                            © {image.credit}
+                          </p>
+                        </div>
                       </SwiperSlide>
                     );
                   })}

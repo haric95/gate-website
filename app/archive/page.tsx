@@ -48,7 +48,7 @@ export default function Home() {
           <LetterPositioning>Archive</LetterPositioning>
         </WordRepeat>
       </h1>
-      <p className="mb-4">
+      <p className="mb-4 text-center">
         We are actively compiling the GATE archive. If you have any photos or
         videos that you would like to share with us, please send an email to
         gatheralltheelectronics@gmail.com

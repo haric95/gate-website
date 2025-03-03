@@ -51,8 +51,7 @@ export const ARCHIVE_DATA: Archive = {
       coverImageUrl: "/posters/CompilationRelease.jpg",
       imageUrls: [],
       contentLinks: [],
-      descriptionMarkup:
-        "On May 2nd GATE invites you to join them for an evening of live performances at the local bastion that is Mapps Cafe.",
+      descriptionMarkup: "<Info Coming Soon>",
     },
     {
       title: "Grab A Tent Everybody Festival",
