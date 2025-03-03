@@ -64,7 +64,7 @@ p {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: white;
   background: #080808;
   overflow-x: hidden;
 }
