@@ -15,6 +15,7 @@ export const useIsMobile = () => {
 
   useEffect(() => {
     window.addEventListener("resize", callback);
+    callback();
   }, []);
 
   return { isMobile };

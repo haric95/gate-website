@@ -19,7 +19,7 @@ export default function Home() {
       style={{ minHeight: "calc(100vh - 144px)" }}
     >
       <div className="fixed w-screen h-screen z-[-1] top-0"></div>
-      <h1 className="text-center text-[32px] mb-4 title strokeme red">
+      <h1 className="text-center text-[32px] mb-4 title textoutline red">
         <WordRepeat>
           <LetterPositioning>About</LetterPositioning>
         </WordRepeat>

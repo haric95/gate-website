@@ -1,7 +1,7 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
 import Markdown from "react-markdown";
-import { ARCHIVE_DATA } from "../archiveData";
+import { ARCHIVE_DATA } from "../archiveData.tsx";
 
 import dynamic from "next/dynamic";
 import { useContext, useState } from "react";
@@ -43,11 +43,16 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center md:p-16 p-4">
       <Gallery />
-      <h1 className="text-center text-[32px] mb-4 title strokeme blue">
+      <h1 className="text-center text-[32px] mb-4 title textoutline blue">
         <WordRepeat>
           <LetterPositioning>Archive</LetterPositioning>
         </WordRepeat>
       </h1>
+      <p className="mb-4">
+        We are actively compiling the GATE archive. If you have any photos or
+        videos that you would like to share with us, please send an email to
+        gatheralltheelectronics@gmail.com
+      </p>
       <div className="w-full md:px-16">
         <div
           {...DEFAULT_TRANSITION}
@@ -58,7 +63,7 @@ export default function Home() {
             onClick={() => setActivePage(ArchivePage.EVENTS)}
           >
             <h1
-              className={`text-center text-lg title mr-4 strokeme red ${activePage === ArchivePage.EVENTS && "active"}`}
+              className={`text-center text-lg title mr-4 textoutline red ${activePage === ArchivePage.EVENTS && "active"}`}
             >
               <LetterPositioning>Events</LetterPositioning>
             </h1>
@@ -68,7 +73,7 @@ export default function Home() {
             onClick={() => setActivePage(ArchivePage.RADIO)}
           >
             <h1
-              className={`text-center text-lg title mr-4 strokeme red ${activePage === ArchivePage.RADIO && "active"}`}
+              className={`text-center text-lg title mr-4 textoutline red ${activePage === ArchivePage.RADIO && "active"}`}
             >
               <LetterPositioning>Radio</LetterPositioning>
             </h1>
@@ -78,7 +83,7 @@ export default function Home() {
             onClick={() => setActivePage(ArchivePage.WORKSHOPS)}
           >
             <h1
-              className={`text-center text-lg title strokeme red ${activePage === ArchivePage.WORKSHOPS && "active"}`}
+              className={`text-center text-lg title textoutline red ${activePage === ArchivePage.WORKSHOPS && "active"}`}
             >
               <LetterPositioning>Workshops</LetterPositioning>
             </h1>
@@ -105,7 +110,7 @@ export default function Home() {
                       <div className="md:w-1/2 flex flex-col justify-between">
                         <div>
                           <h1
-                            className="text-[36px] title leading-[36px] strokeme"
+                            className="text-[36px] title leading-[36px] textoutline"
                             style={{ wordWrap: "break-word" }}
                             title={event.title}
                           >
@@ -156,7 +161,7 @@ export default function Home() {
                   onClick={() => setActiveRadioType(RadioType.MIXGATE)}
                 >
                   <h1
-                    className={`text-center text-lg title mr-4 strokeme green ${activeRadioType == RadioType.MIXGATE && "active"}`}
+                    className={`text-center text-lg title mr-4 textoutline green ${activeRadioType == RadioType.MIXGATE && "active"}`}
                   >
                     MIXGATE
                   </h1>
@@ -166,7 +171,7 @@ export default function Home() {
                   onClick={() => setActiveRadioType(RadioType.THREADS)}
                 >
                   <h1
-                    className={`text-center text-lg title mr-4 strokeme green ${activeRadioType == RadioType.THREADS && "active"}`}
+                    className={`text-center text-lg title mr-4 textoutline green ${activeRadioType == RadioType.THREADS && "active"}`}
                   >
                     Threads
                   </h1>
@@ -195,7 +200,7 @@ export default function Home() {
                               <div className="md:w-1/2 w-full flex flex-col justify-between">
                                 <div>
                                   <h1
-                                    className="text-[36px] title leading-[36px] strokeme "
+                                    className="text-[36px] title leading-[36px] textoutline "
                                     style={{ wordWrap: "break-word" }}
                                     title={radio.title}
                                   >
@@ -249,7 +254,7 @@ export default function Home() {
                               <div className="md:w-1/2 w-full flex flex-col justify-between">
                                 <div>
                                   <h1
-                                    className="text-[36px] title leading-[36px] strokeme "
+                                    className="text-[36px] title leading-[36px] textoutline "
                                     style={{ wordWrap: "break-word" }}
                                     title={radio.title}
                                   >
@@ -311,7 +316,7 @@ export default function Home() {
                       <div className="md:w-1/2 w-full flex flex-col justify-between">
                         <div>
                           <h1
-                            className="text-[36px] title leading-[36px] strokeme"
+                            className="text-[36px] title leading-[36px] textoutline"
                             title={workshop.title}
                             style={{ wordWrap: "break-word" }}
                           >

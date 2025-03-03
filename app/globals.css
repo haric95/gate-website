@@ -83,43 +83,43 @@ body {
   color: rgba(0, 0, 0, 0.0);
 }
 
-.strokeme {
+.textoutline {
   color: #080808;
   background-color: #080808;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
   transition: all 500ms;
 }
 
-.strokeme.green {
+.textoutline.green {
   color: #080808;
   background-color: #080808;
   text-shadow: -1px -1px 0 #369d06, 1px -1px 0 #369d06, -1px 1px 0 #369d06, 1px 1px 0 #369d06;
 }
 
-.clickable.strokeme.green:hover, .strokeme.green.active {
+.clickable.textoutline.green:hover, .textoutline.green.active {
   transform: translateY(-2px);
   text-shadow: -1px -1px 0 #369d06, 1px -1px 0 #369d06, -1px 3px 0 #369d06, 1px 3px 0 #369d06;
 }
 
-.strokeme.blue {
+.textoutline.blue {
   color: #080808;
   background-color: #080808;
   text-shadow: -1px -1px 0 #078b9d, 1px -1px 0 #078b9d, -1px 1px 0 #078b9d, 1px 1px 0 #078b9d;
 }
 
-.clickable.strokeme.blue:hover, .strokeme.blue.active {
+.clickable.textoutline.blue:hover, .textoutline.blue.active {
   transform: translateY(-2px);
   text-shadow: -1px -1px 0 #078b9d, 1px -1px 0 #078b9d, -1px 3px 0 #078b9d, 1px 3px 0 #078b9d;
 }
 
-.strokeme.red {
+.textoutline.red {
   transition: all 500ms;
   color: #080808;
   background-color: #080808;
   text-shadow: -1px -1px 0 #d31f08, 1px -1px 0 #d31f08, -1px 1px 0 #d31f08, 1px 1px 0 #d31f08;
 }
 
-.clickable.strokeme.red:hover, .strokeme.red.active {
+.clickable.textoutline.red:hover, .textoutline.red.active {
   transform: translateY(-2px);
   text-shadow: -1px -1px 0 #d31f08, 1px -1px 0 #d31f08, -1px 3px 0 #d31f08, 1px 3px 0 #d31f08;
 }

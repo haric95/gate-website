@@ -63,23 +63,31 @@ export const Gallery = ({}: GalleryProps) => {
                   className="h-full"
                   ref={sliderRef}
                 >
-                  {galleryImages?.map((url) => {
+                  {galleryImages?.map((image) => {
                     return (
-                      <SwiperSlide key={url} className="h-full !w-fit">
+                      <SwiperSlide
+                        key={image.url}
+                        className="h-full !w-fit flex flex-col"
+                      >
                         <button
-                          className="h-full !w-fit"
+                          className="h-[95%] !w-fit"
                           onClick={(e) => {
                             e.stopPropagation();
                           }}
                         >
-                          <img src={url} className="h-full" />
+                          <img
+                            src={image.url}
+                            alt={image.alt}
+                            className="h-full"
+                          />
                         </button>
+                        <p className="text-white h-[5%]">{image.credit}</p>
                       </SwiperSlide>
                     );
                   })}
                 </Swiper>
                 <button
-                  className="prev-arrow absolute w-4 h-4 bg-red-500 strokeme text-[36px] top-1/2 left-[-26px] z-10 bg-transparent"
+                  className="prev-arrow absolute w-4 h-4 bg-red-500 textoutline text-[36px] top-1/2 left-[-26px] z-10 bg-transparent"
                   onClick={(e) => {
                     e.stopPropagation();
                     handlePrev();
@@ -88,7 +96,7 @@ export const Gallery = ({}: GalleryProps) => {
                   {"<"}
                 </button>
                 <button
-                  className="next-arrow absolute w-4 h-4 bg-red-500 strokeme text-[36px] top-1/2 right-[-26px] z-10"
+                  className="next-arrow absolute w-4 h-4 bg-red-500 textoutline text-[36px] top-1/2 right-[-26px] z-10"
                   onClick={(e) => {
                     e.stopPropagation();
                     handleNext();
@@ -98,7 +106,7 @@ export const Gallery = ({}: GalleryProps) => {
                 </button>
               </div>
               <button
-                className="prev-arrow absolute w-4 h-4 bg-red-500 strokeme text-[36px] top-0 right-8 z-10 bg-transparent"
+                className="prev-arrow absolute w-4 h-4 bg-red-500 textoutline text-[36px] top-0 right-8 z-10 bg-transparent"
                 onClick={() => {
                   setGalleryImages(null);
                 }}

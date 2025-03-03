@@ -94,7 +94,7 @@ export const Header = () => {
           <li className="mr-4">
             <Link
               href="/feed"
-              className={`block strokeme green ${pathname === "/feed" && "active"} !bg-transparent clickable`}
+              className={`block textoutline green ${pathname === "/feed" && "active"} !bg-transparent clickable`}
             >
               <h1>
                 <LetterPositioning>Feed</LetterPositioning>
@@ -104,23 +104,23 @@ export const Header = () => {
           <li className="mr-4">
             <Link
               href="/archive"
-              className={`block strokeme blue ${pathname === "/archive" && "active"} !bg-transparent clickable`}
+              className={`block textoutline blue ${pathname === "/archive" && "active"} !bg-transparent clickable`}
             >
               <h1>
                 <LetterPositioning>Archive</LetterPositioning>
               </h1>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/about"
-              className={`block strokeme red ${pathname === "/about" && "active"} !bg-transparent clickable`}
+              className={`block textoutline red ${pathname === "/about" && "active"} !bg-transparent clickable`}
             >
               <h1>
                 <LetterPositioning>About</LetterPositioning>
               </h1>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </header>

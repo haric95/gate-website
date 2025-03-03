@@ -4,10 +4,12 @@ import { createContext, PropsWithChildren, useState } from "react";
 
 export type GlobalContextType = {
   galleryIndex: number | null;
-  galleryImages: string[] | null;
+  galleryImages: { url: string; credit: string; alt: string }[] | null;
   shaderHighlightedElement: Element | null;
   setGalleryIndex: React.Dispatch<React.SetStateAction<number | null>>;
-  setGalleryImages: React.Dispatch<React.SetStateAction<string[] | null>>;
+  setGalleryImages: React.Dispatch<
+    React.SetStateAction<{ url: string; credit: string; alt: string }[] | null>
+  >;
   setShaderHighlightedElement: React.Dispatch<
     React.SetStateAction<Element | null>
   >;
