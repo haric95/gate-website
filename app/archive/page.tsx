@@ -41,19 +41,24 @@ export default function Home() {
   const globalData = useContext(GlobalContext);
 
   return (
-    <main className="flex min-h-screen flex-col items-center md:p-16 p-4">
-      <Gallery />
+    <main className="flex min-h-[calc(100vh-144px-64px)] flex-col items-center md:p-16 p-4 justify-center">
+      {/* <Gallery /> */}
       <h1 className="text-center text-[32px] mb-4 title textoutline blue">
         <WordRepeat>
           <LetterPositioning>Archive</LetterPositioning>
         </WordRepeat>
       </h1>
-      <p className="mb-4 text-center">
+      <p className="mb-4 text-center w-1/2">
         We are actively compiling the GATE archive. If you have any photos or
-        videos that you would like to share with us, please send an email to
-        gatheralltheelectronics@gmail.com
+        videos that you would like to share with us, please send an email to{" "}
+        <a
+          href="mailto:gatheralltheelectronics@gmail.com"
+          className="text-white"
+        >
+          gatheralltheelectronics@gmail.com
+        </a>
       </p>
-      <div className="w-full md:px-16">
+      {/* <div className="w-full md:px-16">
         <div
           {...DEFAULT_TRANSITION}
           className="w-full flex justify-center items-center mb-8"
@@ -341,7 +346,7 @@ export default function Home() {
             </motion.div>
           )}
         </AnimatePresence>
-      </div>
+      </div> */}
     </main>
   );
 }
