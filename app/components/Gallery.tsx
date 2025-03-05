@@ -40,10 +40,10 @@ export const Gallery = ({}: GalleryProps) => {
         <motion.div
           key={"gallery"}
           {...DEFAULT_TRANSITION}
-          className="fixed w-screen h-screen top-0 left-0 z-[99]"
+          className="fixed w-screen h-screen top-0 left-0 z-[99] overflow-hidden"
         >
           <div className="w-full h-full relative">
-            <div className="absolute bg-black opacity-90 w-full h-full" />
+            <div className="absolute bg-black opacity-[96%] w-full h-full" />
             <div
               className="absolute w-full h-full flex justify-center items-center"
               onClick={(e) => {
@@ -53,7 +53,7 @@ export const Gallery = ({}: GalleryProps) => {
               <div className="w-3/4 h-3/4 relative">
                 <Swiper
                   modules={[Navigation, A11y]}
-                  spaceBetween={16}
+                  spaceBetween={0}
                   slidesPerView={"auto"}
                   initialSlide={galleryIndex ?? 0}
                   onSlideChange={() => {}}
