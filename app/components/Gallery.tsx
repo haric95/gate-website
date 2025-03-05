@@ -67,14 +67,14 @@ export const Gallery = ({}: GalleryProps) => {
                     return (
                       <SwiperSlide key={image.url} className="h-full !w-fit">
                         <div
-                          className="h-[95%] !w-fit flex justify-start items-center flex-col"
+                          className="h-[95%] !w-fit flex justify-center items-center flex-col"
                           onClick={() => {}}
                         >
                           <img
                             src={image.url}
                             className="max-h-full max-w-full"
                           />
-                          <p className="h-[5%] w-full text-left">
+                          <p className="h-[5%] w-full text-left text-[12px]">
                             © {image.credit}
                           </p>
                         </div>
