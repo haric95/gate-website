@@ -86,7 +86,7 @@ export const EmailForm = () => {
             </>
           ) : (
             <p className="text-center">
-              Thank you for signing up for our mailing list.
+              Thank you for signing up to our mailing list.
             </p>
           )}
         </form>
