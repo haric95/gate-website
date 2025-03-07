@@ -90,6 +90,12 @@ body {
   transition: all 500ms;
 }
 
+.clickable.textoutline:hover   {
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 3px 0 white, 1px 3px 0 white;
+  transform: translateY(-2px);
+
+}
+
 .textoutline.green {
   color: #080808;
   background-color: #080808;
@@ -122,4 +128,27 @@ body {
 .clickable.textoutline.red:hover, .textoutline.red.active {
   transform: translateY(-2px);
   text-shadow: -1px -1px 0 #d31f08, 1px -1px 0 #d31f08, -1px 3px 0 #d31f08, 1px 3px 0 #d31f08;
+}
+
+
+.inputoutline {
+  transition: all 500ms;
+  box-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  outline: none;
+}
+
+.inputoutline:hover, .inputoutline:focus-within {
+  transform: translateY(-2px);  
+  box-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 5px 0 white, 1px 5px 0 white;
+}
+
+.inputoutline.red {
+  transition: all 500ms;
+  box-shadow: -1px -1px 0 #d31f08, 1px -1px 0 #d31f08, -1px 1px 0 #d31f08, 1px 1px 0 #d31f08;
+  outline: none;
+}
+
+.inputoutline:hover.red, .inputoutline:focus-within.red {
+  transform: translateY(-2px);  
+  box-shadow: -1px -1px 0 #d31f08, 1px -1px 0 #d31f08, -1px 5px 0 #d31f08, 1px 5px 0 #d31f08;
 }
