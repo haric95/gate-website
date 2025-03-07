@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import WordRepeat from "./components/WordRepeat";
 import { useIsMobile } from "./hooks/useIsMobile";
+import { EmailForm } from "./components/EmailForm";
 const MEGATV = dynamic(() => import("./components/MEGATV"), {
   ssr: false,
 });
@@ -43,16 +44,14 @@ export default function Home() {
                 <LetterPositioning>The Distillery N17</LetterPositioning>
               </WordRepeat>
             </h1>
-            <h2 className="text-[16px] mb-4 title textoutline blue text-center">
+            <h2 className="text-[16px] mb-16 title textoutline blue text-center">
               <WordRepeat>
                 <LetterPositioning>18 - 04 - 25</LetterPositioning>
               </WordRepeat>
             </h2>
-            <h2 className="text-[16px] mb-4 title textoutline red text-center">
-              <WordRepeat>
-                <LetterPositioning>Info Coming Soon</LetterPositioning>
-              </WordRepeat>
-            </h2>
+            <div>
+              <EmailForm />
+            </div>
           </>
         ) : (
           <>
@@ -61,16 +60,14 @@ export default function Home() {
                 <LetterPositioning>GATE @ The Distillery N17</LetterPositioning>
               </WordRepeat>
             </h1>
-            <h2 className="text-[32px] mb-4 title textoutline blue text-center">
+            <h2 className="text-[32px] mb-16 title textoutline blue text-center">
               <WordRepeat>
                 <LetterPositioning>18 - 04 - 25</LetterPositioning>
               </WordRepeat>
             </h2>
-            <h2 className="text-[32px] mb-4 title textoutline red text-center">
-              <WordRepeat>
-                <LetterPositioning>Info Coming Soon</LetterPositioning>
-              </WordRepeat>
-            </h2>
+            <div>
+              <EmailForm />
+            </div>
           </>
         )}
       </div>
