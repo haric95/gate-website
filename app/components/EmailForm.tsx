@@ -8,6 +8,7 @@ type a = keyof Form;
 export const EmailForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const [touched, setTouched] = useState(false);
+  const [responseError, setResponseError] = useState<string | null>(null);
   return (
     <Formik
       initialValues={{ email: "" }}
@@ -32,6 +33,11 @@ export const EmailForm = () => {
         });
         if (response.status === 200) {
           setSubmitted(true);
+        } else {
+          // @ts-ignore
+          const res = await response.json();
+          console.log(res.message);
+          setResponseError(res.message);
         }
       }}
       validateOnChange={touched}
@@ -69,6 +75,7 @@ export const EmailForm = () => {
               <p className="text-[#d31f08]">
                 {errors.email && touched.email && errors.email}
               </p>
+              <p className="text-[#d31f08]">{responseError}</p>
 
               <button
                 type="submit"

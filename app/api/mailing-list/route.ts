@@ -35,7 +35,10 @@ export async function POST(request: Request) {
 
   if (!validator.validate(email)) {
     return new Response(
-      JSON.stringify({ message: "Please enter a valid email address" }),
+      JSON.stringify({
+        message:
+          "There was an error registering your email. Please try again later.",
+      }),
       {
         status: 400,
         headers: { "Content-Type": "application/json" },
