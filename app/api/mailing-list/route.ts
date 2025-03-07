@@ -46,18 +46,30 @@ export async function POST(request: Request) {
     );
   }
 
-  // @ts-ignore
-  await sheets.spreadsheets.values.append({
-    spreadsheetId: "1IsFzCk1h9hkxpQ1hAumB0S5UGt28tRcJquqKz5UE_2I",
-    range: "Sheet1",
-    valueInputOption: "USER_ENTERED",
-    resource: {
-      values: [[email]],
-    },
-  });
-
-  return new Response(JSON.stringify({}), {
-    status: 200,
-    headers: { "Content-Type": "application/json" },
-  });
+  try {
+    // @ts-ignore
+    await sheets.spreadsheets.values.append({
+      spreadsheetId: "1IsFzCk1h9hkxpQ1hAumB0S5UGt28tRcJquqKz5UE_2I",
+      range: "Sheet1",
+      valueInputOption: "USER_ENTERED",
+      resource: {
+        values: [[email]],
+      },
+    });
+    return new Response(JSON.stringify({}), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
+  } catch (err) {
+    return new Response(
+      JSON.stringify({
+        message:
+          "There was an error registering your email. Please try again later.",
+      }),
+      {
+        status: 400,
+        headers: { "Content-Type": "application/json" },
+      },
+    );
+  }
 }
