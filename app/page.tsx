@@ -1,9 +1,9 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { EmailForm } from "./components/EmailForm";
 import WordRepeat from "./components/WordRepeat";
 import { useIsMobile } from "./hooks/useIsMobile";
-import { EmailForm } from "./components/EmailForm";
 const MEGATV = dynamic(() => import("./components/MEGATV"), {
   ssr: false,
 });
@@ -17,6 +17,9 @@ const ShaderBackground = dynamic(
   () => import("./components/ShaderBackground"),
   {},
 );
+const TicketWidget = dynamic(() => import("./components/TicketWidget"), {
+  ssr: false,
+});
 
 export default function Home() {
   const { isMobile } = useIsMobile();

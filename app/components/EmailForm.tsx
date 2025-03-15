@@ -3,8 +3,6 @@ import { useState } from "react";
 
 type Form = { email: string };
 
-type a = keyof Form;
-
 export const EmailForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const [touched, setTouched] = useState(false);
@@ -80,6 +78,7 @@ export const EmailForm = () => {
               <button
                 type="submit"
                 className={`p-2 title textoutline clickable ${isSubmitting && "animate-pulse"}`}
+                disabled={isSubmitting}
               >
                 {isSubmitting ? "Submitting" : "Submit"}
               </button>

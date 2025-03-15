@@ -3,3 +3,5 @@ export const DEFAULT_TRANSITION = {
   animate: { opacity: 1 },
   exit: { opacity: 0 },
 };
+
+export const TICKET_PRICE_POUNDS = 0.5;

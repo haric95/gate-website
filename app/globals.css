@@ -142,6 +142,22 @@ body {
   box-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 5px 0 white, 1px 5px 0 white;
 }
 
+.inputoutline.green {
+  transition: all 500ms;
+  box-shadow: -1px -1px 0 #369d06, 1px -1px 0 #369d06, -1px 1px 0 #369d06, 1px 1px 0 #369d06;
+  outline: none;
+}
+
+.inputoutline:hover.green, .inputoutline:focus-within.green {
+  transform: translateY(-2px);  
+  box-shadow: -1px -1px 0 #369d06, 1px -1px 0 #369d06, -1px 5px 0 #369d06, 1px 5px 0 #369d06;
+}
+
+.inputoutline.lg:hover.green, .inputoutline.lg:focus-within.green {
+  transform: translateY(-2px);  
+  box-shadow: -1px -1px 0 #369d06, 1px -1px 0 #369d06, -1px 25px 0 #369d06, 1px 8px 0 #369d06;
+}
+
 .inputoutline.red {
   transition: all 500ms;
   box-shadow: -1px -1px 0 #d31f08, 1px -1px 0 #d31f08, -1px 1px 0 #d31f08, 1px 1px 0 #d31f08;
