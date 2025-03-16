@@ -74,6 +74,7 @@ export default () => {
           mode: "payment",
           amount: numTickets * TICKET_PRICE_POUNDS * 100,
           currency: "gbp",
+          appearance: { variables: { fontFamily: "mono" } },
         }}
       >
         <TicketWidget
