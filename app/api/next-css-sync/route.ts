@@ -124,7 +124,7 @@ export async function POST(request: NextRequest) {
         // Check details in URL match and return information
         const row = data.data.values[rowIndex];
 
-        if (!row[0] === name && !(row[3] === email)) {
+        if (!(row[0] === name && row[3] === email)) {
           return NextResponse.json(
             { error: "Invalid Order Details" },
             { status: 400 },
