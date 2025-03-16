@@ -1,3 +1,4 @@
+import { TICKET_PRICE_POUNDS } from "@/app/consts";
 import { NextRequest, NextResponse } from "next/server";
 import { Stripe } from "stripe";
 
@@ -14,6 +15,13 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 export async function POST(request: NextRequest) {
   try {
     const { amount } = await request.json();
+
+    if ((amount / (TICKET_PRICE_POUNDS * 100)) % 1 !== 0) {
+      return NextResponse.json(
+        { error: `Invalid Payment Amount` },
+        { status: 400 },
+      );
+    }
 
     const paymentIntent = await stripe.paymentIntents.create({
       amount,
