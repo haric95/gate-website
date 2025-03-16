@@ -14,7 +14,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 
 export async function POST(request: NextRequest) {
   try {
-    const { amount } = await request.json();
+    const { amount, email } = await request.json();
 
     if ((amount / (TICKET_PRICE_POUNDS * 100)) % 1 !== 0) {
       return NextResponse.json(
@@ -28,6 +28,7 @@ export async function POST(request: NextRequest) {
       currency: "gbp",
       automatic_payment_methods: { enabled: true },
       description: `Payment for ${amount / (TICKET_PRICE_POUNDS * 100)} ticket(s) for GATE 18th April`,
+      receipt_email: email ?? undefined,
     });
 
     return NextResponse.json({ clientSecret: paymentIntent.client_secret });

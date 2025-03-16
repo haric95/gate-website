@@ -60,9 +60,17 @@ export default ({ amount }: TicketWidgetProps) => {
       });
     }
 
+    const response = await fetch("/api/create-payment-intent", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ amount: amount * 100, email }),
+    });
+    const json = await response.json();
+    const secret = json.clientSecret as string;
+
     const { error } = await stripe.confirmPayment({
       elements,
-      clientSecret,
+      clientSecret: secret,
       confirmParams: {
         return_url: `https://gatheralltheelectronics.com/tickets/success?name=${name}&email=${email}`,
         receipt_email: email,
@@ -197,7 +205,11 @@ export default ({ amount }: TicketWidgetProps) => {
                 <div
                   className={`${errorMessage ? "border-red-500" : "border-black"} border-2 p-8`}
                 >
-                  <PaymentElement options={{}} />
+                  <PaymentElement
+                    options={{
+                      business: { name: "Gather All The Electronics" },
+                    }}
+                  />
                 </div>
               )}
               {errorMessage && (
