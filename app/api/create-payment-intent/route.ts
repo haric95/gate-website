@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
       amount,
       currency: "gbp",
       automatic_payment_methods: { enabled: true },
-      description: `Payment for ${amount / (TICKET_PRICE_POUNDS * 100)} ticket(s) for GATE 18th April`,
+      description: `${amount / (TICKET_PRICE_POUNDS * 100)} ticket(s) for GATE 18th April`,
       receipt_email: email ?? undefined,
     });
 
