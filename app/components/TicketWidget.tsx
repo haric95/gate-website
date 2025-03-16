@@ -10,7 +10,11 @@ import React, { useEffect, useState } from "react";
 import Spinner from "react-spinners/PropagateLoader";
 import { GrCheckbox, GrCheckboxSelected } from "react-icons/gr";
 
-type TicketWidgetProps = { amount: number };
+type TicketWidgetProps = {
+  amount: number;
+  numTickets: number;
+  setNumTickets: React.Dispatch<React.SetStateAction<number>>;
+};
 
 type Form = { email: string; mailingList: boolean; name: string };
 
@@ -73,7 +77,7 @@ export default ({ amount }: TicketWidgetProps) => {
 
   return (
     <div className="w-full h-full p-8 border-2 border-[#369d06] bg-white inputoutline green">
-      <p className="mb-4 text-black">Pay: £{amount.toFixed(2)}</p>
+      <p className="mb-4 text-black text-xl">Pay: £{amount.toFixed(2)}</p>
       {!clientSecret || !elements || !stripe ? (
         <div className="p-4 flex justify-center">
           <Spinner color="#369d06" />
