@@ -4,4 +4,4 @@ export const DEFAULT_TRANSITION = {
   exit: { opacity: 0 },
 };
 
-export const TICKET_PRICE_POUNDS = 0.5;
+export const TICKET_PRICE_POUNDS = 12;
