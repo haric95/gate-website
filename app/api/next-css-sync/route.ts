@@ -41,6 +41,7 @@ export async function POST(request: NextRequest) {
     const sheets = google.sheets({ version: "v4", auth });
 
     const { intent, name, email } = await request.json();
+    const ticketURL = request.headers.get("Referer");
 
     console.log(
       `Recieved request with following params: Intent-${intent} name-${name} email-${email}`,
@@ -103,6 +104,7 @@ export async function POST(request: NextRequest) {
                 intent,
                 Math.floor(stripePayment.amount / (TICKET_PRICE_POUNDS * 100)),
                 email,
+                ticketURL,
               ],
             ],
           },

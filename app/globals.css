@@ -168,3 +168,14 @@ body {
   transform: translateY(-2px);  
   box-shadow: -1px -1px 0 #d31f08, 1px -1px 0 #d31f08, -1px 5px 0 #d31f08, 1px 5px 0 #d31f08;
 }
+
+.inputoutline.blue {
+  transition: all 500ms;
+  box-shadow: -1px -1px 0 #078b9d, 1px -1px 0 #078b9d, -1px 1px 0 #078b9d, 1px 1px 0 #078b9d;
+  outline: none;
+}
+
+.inputoutline:hover.blue, .inputoutline:focus-within.blue {
+  transform: translateY(-2px);  
+  box-shadow: -1px -1px 0 #078b9d, 1px -1px 0 #078b9d, -1px 5px 0 #078b9d, 1px 5px 0 #078b9d;
+}

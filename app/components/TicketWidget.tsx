@@ -84,8 +84,10 @@ export default ({ amount }: TicketWidgetProps) => {
   };
 
   return (
-    <div className="w-full h-full p-8 border-2 border-[#369d06] bg-white inputoutline green">
-      <p className="mb-4 text-black text-xl">Pay: £{amount.toFixed(2)}</p>
+    <div className="w-full h-full p-8 border-2 border-[#369d06] bg-black inputoutline green">
+      <p className="mb-4 text-white text-[24px] bold">
+        Pay: £{amount.toFixed(2)}
+      </p>
       {!clientSecret || !elements || !stripe ? (
         <div className="p-4 flex justify-center">
           <Spinner color="#369d06" />
@@ -127,9 +129,9 @@ export default ({ amount }: TicketWidgetProps) => {
             <form onSubmit={handleSubmit}>
               <div className="mb-2 flex">
                 <div className="w-full">
-                  <p className="text-black">Full Name:</p>
+                  <p className="text-white text-lg">Full Name:</p>
                   <input
-                    className={`bg-white text-black font-mono w-full ${errors.name ? "border-red-500" : "border-black"} border-2  p-2 ${errors.name && "red"}`}
+                    className={`bg-black text-white font-mono w-full ${errors.name ? "border-red-500" : "border-white"} border-2  p-2 ${errors.name && "red"}`}
                     style={{ maxWidth: "380px" }}
                     type="text"
                     name="name"
@@ -151,9 +153,9 @@ export default ({ amount }: TicketWidgetProps) => {
               </div>
               <div className="mb-2 flex">
                 <div className="w-full">
-                  <p className="text-black">Email Address:</p>
+                  <p className="text-white text-lg">Email Address:</p>
                   <input
-                    className={`bg-white text-black font-mono w-full ${errors.email ? "border-red-500" : "border-black"} border-2  p-2 ${errors.email && "red"}`}
+                    className={`bg-black text-white font-mono w-full ${errors.email ? "border-red-500" : "border-white"} border-2  p-2 ${errors.email && "red"}`}
                     style={{ maxWidth: "380px" }}
                     type="email"
                     name="email"
@@ -174,7 +176,7 @@ export default ({ amount }: TicketWidgetProps) => {
                 </div>
               </div>
               <button
-                className="font-mono flex text-black items-center mb-8"
+                className="font-mono flex text-white items-center mb-8"
                 type="button"
                 onClick={() => {
                   setFieldValue("mailingList", !values.mailingList);
@@ -200,10 +202,10 @@ export default ({ amount }: TicketWidgetProps) => {
                 </div>
                 Sign up to our mailing list
               </button>
-              <p className="text-black">Payment Details:</p>
+              <p className="text-white text-lg">Payment Details:</p>
               {clientSecret && (
                 <div
-                  className={`${errorMessage ? "border-red-500" : "border-black"} border-2 p-8`}
+                  className={`${errorMessage ? "border-red-500" : "border-white"} border-2 p-8`}
                 >
                   <PaymentElement
                     options={{
@@ -217,7 +219,7 @@ export default ({ amount }: TicketWidgetProps) => {
               )}
               <button
                 type="submit"
-                className={`w-full bg-black text-white text-center mt-8 p-4 border-white border-2 ${loading && "animate-pulse pointer-events-none cursor-not-allowed"} ${!isValid && "pointer-events-none cursor-not-allowed bg-gray-500"}`}
+                className={`w-full bg-black text-white text-center mt-8 p-4 border-[#369d06] border-2 inputoutline green ${loading && "animate-pulse pointer-events-none cursor-not-allowed"} ${!isValid && "pointer-events-none cursor-not-allowed bg-gray-500 border-[#369d06]"}`}
               >
                 {loading ? "Submitting" : "Submit"}
               </button>

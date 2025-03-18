@@ -7,13 +7,11 @@ type LetterPositioningProps = {
 
 export default ({ children }: LetterPositioningProps) => {
   const pos = useMemo(() => {
-    if (children) {
-      return children
-        .split("")
-        .map(() => [Math.random() * 0.06, Math.random() * 0.06]);
-    }
-    return null;
-  }, [children]);
+    return new Array(100).fill(null).map((_) => {
+      return [Math.random() * 0.06, Math.random() * 0.06];
+    });
+  }, []);
+
   return pos ? (
     <>
       {children?.split("").map((char, index) => (

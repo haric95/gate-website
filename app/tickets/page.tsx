@@ -41,18 +41,23 @@ export default () => {
           <LetterPositioning>Tickets</LetterPositioning>
         </WordRepeat>
       </h1>
+      <h1 className="text-center text-[32px] mb-4 title textoutline blue">
+        <WordRepeat>
+          <LetterPositioning>£12</LetterPositioning>
+        </WordRepeat>
+      </h1>
       <div className="flex">
         <button
           className="mr-4 cursor-pointer p-2"
           onClick={() => handleClick(-1)}
         >
-          <h1 className="text-center text-[32px] mb-4 title textoutline blue">
+          <h1 className="text-center text-[32px] mb-4 title textoutline red">
             <WordRepeat>
               <LetterPositioning>-</LetterPositioning>
             </WordRepeat>
           </h1>
         </button>
-        <h1 className="text-center text-[32px] mb-4 title textoutline blue p-2">
+        <h1 className="text-center text-[32px] mb-4 title textoutline red p-2">
           <WordRepeat>
             <LetterPositioning>{String(numTickets)}</LetterPositioning>
           </WordRepeat>
@@ -61,7 +66,7 @@ export default () => {
           className="ml-4 cursor-pointer p-2"
           onClick={() => handleClick(1)}
         >
-          <h1 className="text-center text-[32px] mb-4 title textoutline blue">
+          <h1 className="text-center text-[32px] mb-4 title textoutline red">
             <WordRepeat>
               <LetterPositioning>+</LetterPositioning>
             </WordRepeat>
@@ -74,7 +79,15 @@ export default () => {
           mode: "payment",
           amount: numTickets * TICKET_PRICE_POUNDS * 100,
           currency: "gbp",
-          appearance: { variables: { fontFamily: "mono" } },
+          paymentMethodTypes: ["card", "paypal"],
+
+          appearance: {
+            variables: {
+              fontFamily: "mono",
+              colorBackground: "#080808",
+              colorText: "white",
+            },
+          },
         }}
       >
         <TicketWidget
