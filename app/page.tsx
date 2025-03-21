@@ -286,6 +286,9 @@ export default function Home() {
           </div>
         )}
       </div>
+      <div className="mt-32">
+        <EmailForm />
+      </div>
     </main>
   );
 }
