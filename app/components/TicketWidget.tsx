@@ -84,7 +84,7 @@ export default ({ amount }: TicketWidgetProps) => {
   };
 
   return (
-    <div className="w-full h-full p-8 border-2 border-[#369d06] bg-black inputoutline green">
+    <div className="w-full h-full p-8 border-2 border-white bg-black inputoutline">
       <p className="mb-4 text-white text-[24px] bold">
         Pay: £{amount.toFixed(2)}
       </p>

@@ -42,23 +42,13 @@ export default function Home() {
 
   return (
     <main className="flex min-h-[calc(100vh-144px-64px)] flex-col items-center md:p-16 p-4 justify-center">
-      {/* <Gallery /> */}
+      <Gallery />
       <h1 className="text-center text-[32px] mb-4 title textoutline blue">
         <WordRepeat>
           <LetterPositioning>Archive</LetterPositioning>
         </WordRepeat>
       </h1>
-      <p className="mb-4 text-center w-1/2">
-        We are actively compiling the GATE archive. If you have any photos or
-        videos that you would like to share with us, please send an email to{" "}
-        <a
-          href="mailto:gatheralltheelectronics@gmail.com"
-          className="text-white"
-        >
-          gatheralltheelectronics@gmail.com
-        </a>
-      </p>
-      {/* <div className="w-full md:px-16">
+      <div className="w-full md:px-16">
         <div
           {...DEFAULT_TRANSITION}
           className="w-full flex justify-center items-center mb-8"
@@ -139,9 +129,11 @@ export default function Home() {
                             </Markdown>
                           </div>
                         </div>
-                        <div className="w-full h-32">
-                          <PreviewGallery imageUrls={event.imageUrls} />
-                        </div>
+                        {event.imageUrls.length > 0 && (
+                          <div className="w-full h-32">
+                            <PreviewGallery imageUrls={event.imageUrls} />
+                          </div>
+                        )}
                       </div>
                     </div>
 
@@ -194,10 +186,10 @@ export default function Home() {
                             key={radio.title}
                           >
                             <hr className="color-white border-color-white w-full mb-8" />
-                            <div className="flex md:flex-row flex-col w-full transition-all justify-between items-between">
+                            <div className="flex md:flex-row flex-col w-full transition-all justify-between items-between w-1/2">
                               <div className="md:w-1/2 w-full md:mr-8 mb-4 md:mb-0 flex items-center justify-center">
                                 <img
-                                  className="max-h-[480px]"
+                                  className="max-h-[480px] h-auto w-auto aspect-square"
                                   src={radio.coverUrl}
                                   alt={`${radio.title} Poster`}
                                 />
@@ -251,7 +243,7 @@ export default function Home() {
                             <div className="flex md:flex-row flex-col w-full transition-all justify-between items-between">
                               <div className="md:w-1/2 w-full md:mr-8 mb-4 md:mb-0 flex items-center justify-center">
                                 <img
-                                  className="max-h-[480px]"
+                                  className="max-h-[480px] h-auto w-auto aspect-square"
                                   src={radio.coverUrl}
                                   alt={`${radio.title} Poster`}
                                 />
@@ -346,7 +338,7 @@ export default function Home() {
             </motion.div>
           )}
         </AnimatePresence>
-      </div> */}
+      </div>
     </main>
   );
 }

@@ -111,6 +111,16 @@ export const Header = () => {
               </h1>
             </Link>
           </li>
+          <li className="mr-4">
+            <Link
+              href="/tickets"
+              className={`block textoutline red ${pathname === "/tickets" && "active"} !bg-transparent clickable`}
+            >
+              <h1>
+                <LetterPositioning>Tickets</LetterPositioning>
+              </h1>
+            </Link>
+          </li>
           {/* <li>
             <Link
               href="/about"

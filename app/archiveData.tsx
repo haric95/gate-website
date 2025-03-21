@@ -51,7 +51,18 @@ export const ARCHIVE_DATA: Archive = {
       coverImageUrl: "/posters/CompilationRelease.jpg",
       imageUrls: [],
       contentLinks: [],
-      descriptionMarkup: "<Info Coming Soon>",
+      descriptionMarkup: `
+Hidden under a jumper and smuggled up the ladder,&nbsp; \n 
+out of a colossal network of caverns and tunnels beneath the city.&nbsp; \n
+Elicited from hushed assemblies in makeshift psychomanteums.&nbsp; \n
+Drawn on scraps of cardboard, scattered into the River Lea.&nbsp; \n
+&nbsp; \n
+The canary flies,&nbsp; \n
+Its wings slicked and faltering&nbsp; \n
+Orange cool technology.&nbsp; \n
+&nbsp; \n
+&nbsp; \n
+The GATE Executants have been busy excavating waveforms from the depths of their synthetic conscience. In an aggregated body, ripe for your consumption, this is their first contribution to the sphere of downloadable audio files. Many thanks to H and everyone else down at Mapps Cafe for letting us push aside the ketchup and mayonnaise for a few hours to host one of the more special evenings we’ve had in a while, with live performances by Bubble People, Ella Ex Machina, Oluwafunmilayo & Xuân perform: Triskele, Roberta Von & Internal Object."`,
     },
     {
       title: "Grab A Tent Everybody Festival",
@@ -280,6 +291,69 @@ Scrunched and puckered in hand, the scraps debatably read: ‘ESCAPE ENGLISH CUL
         releaseDate: new Date(2023, 9, 3),
         coverUrl: "/THREADSG.jpg",
         description: `Beckett & P-Orridge`,
+      },
+      {
+        title: "Gather All The Electronics w/ Kung Fu Kick Drum",
+        url: "https://www.mixcloud.com/ThreadsRadio/23-jan-24-gate-w-kung-fu-kick-drum-hackney-wick/",
+        releaseDate: new Date(2024, 0, 23),
+        coverUrl: "/THREADSKFKD.jpg",
+        description: ``,
+      },
+      {
+        title: "Gather All The Electronics w/ Overneath",
+        url: "https://soundcloud.com/threadsradio/gate-w-overneath-hackney-wick-14-may-24",
+        releaseDate: new Date(2024, 5, 14),
+        coverUrl: "/THREADSOVERNEATH.jpg",
+        description: ``,
+      },
+      {
+        title: "Gather All The Electronics w/ Bart, Seshtan and Craft Ebbing",
+        url: "https://soundcloud.com/threadsradio/gate-w-bart-seshtan-and-craft-ebbing-hackney-wick-09-jul-24",
+        releaseDate: new Date(2024, 6, 9),
+        coverUrl: "/THREADSBSCE.jpg",
+        description: ``,
+      },
+      {
+        title: "Gather All The Electronics w/ Internal Object",
+        url: "https://soundcloud.com/threadsradio/gate-w-internal-object-hackney-wick-19-mar-24-jingle",
+        releaseDate: new Date(2024, 2, 19),
+        coverUrl: "/THREADSIO.jpg",
+        description: ``,
+      },
+      {
+        title: "Gather All The Electronics w/ Seshtan",
+        url: "https://soundcloud.com/seshtan/threads-radio-gate-w-seshtan-21-feb-23",
+        releaseDate: new Date(2023, 1, 21),
+        coverUrl: "/THREADSSESH.jpg",
+        description: ``,
+      },
+      {
+        title: "Gather All The Electronics w/ proto//spacer",
+        url: "https://soundcloud.com/mirlomirlo/gate-w-protospacer-hackney-wick-13-jun-threads",
+        releaseDate: new Date(2023, 5, 13),
+        coverUrl: "/THREADSPROTO.jpg",
+        description: ``,
+      },
+      {
+        title: "Gather All The Electronics w/ Scary Hari",
+        url: "https://www.mixcloud.com/ThreadsRadio/gate-w-scary-hari-fish-island-18-apr-23/",
+        releaseDate: new Date(2023, 3, 18),
+        coverUrl: "/THREADSSH.jpg",
+        description: ``,
+      },
+      {
+        title: "Gather All The Electronics w/ Bubble People",
+        url: "https://www.mixcloud.com/ThreadsRadio/gate-w-jasper-drifts-27-dec-22/",
+        releaseDate: new Date(2022, 5, 22),
+        coverUrl: "/THREADSBP.jpg",
+        description: ``,
+      },
+      {
+        title: "We Appreciate Power w/ Nathan Lusty (GATE)",
+        url: "https://www.mixcloud.com/ThreadsRadio/we-appreciate-power-w-nathan-lusty-gate-hackney-wick-01-nov-22/",
+        releaseDate: new Date(2022, 10, 1),
+        coverUrl: "/THREADSNL.jpg",
+        description: ``,
       },
     ],
   },

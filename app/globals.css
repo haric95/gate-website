@@ -83,6 +83,10 @@ body {
   color: rgba(0, 0, 0, 0.0);
 }
 
+.textshadow {
+  text-shadow: rgba(255,255,255,0.5) -3px 5px 5px;
+}
+
 .textoutline {
   color: #080808;
   background-color: #080808;

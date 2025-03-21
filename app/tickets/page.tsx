@@ -36,7 +36,7 @@ export default () => {
 
   return (
     <main className="flex min-h-[calc(100vh-144px-64px)] flex-col items-center md:p-16 p-4 justify-center">
-      <h1 className="text-center text-[32px] mb-4 title textoutline green ">
+      <h1 className="text-center text-[32px] mb-4 title textoutline red">
         <WordRepeat>
           <LetterPositioning>Tickets</LetterPositioning>
         </WordRepeat>
@@ -51,13 +51,19 @@ export default () => {
           className="mr-4 cursor-pointer p-2"
           onClick={() => handleClick(-1)}
         >
-          <h1 className="text-center text-[32px] mb-4 title textoutline red">
+          <h1
+            className="text-center text-[32px] mb-4 title textoutline green
+          "
+          >
             <WordRepeat>
               <LetterPositioning>-</LetterPositioning>
             </WordRepeat>
           </h1>
         </button>
-        <h1 className="text-center text-[32px] mb-4 title textoutline red p-2">
+        <h1
+          className="text-center text-[32px] mb-4 title textoutline green
+         p-2"
+        >
           <WordRepeat>
             <LetterPositioning>{String(numTickets)}</LetterPositioning>
           </WordRepeat>
@@ -66,7 +72,10 @@ export default () => {
           className="ml-4 cursor-pointer p-2"
           onClick={() => handleClick(1)}
         >
-          <h1 className="text-center text-[32px] mb-4 title textoutline red">
+          <h1
+            className="text-center text-[32px] mb-4 title textoutline green
+          "
+          >
             <WordRepeat>
               <LetterPositioning>+</LetterPositioning>
             </WordRepeat>
