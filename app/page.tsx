@@ -6,6 +6,7 @@ import WordRepeat from "./components/WordRepeat";
 import { useIsMobile } from "./hooks/useIsMobile";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
+import { InteractivePoster } from "./components/InteractivePoster";
 const MEGATV = dynamic(() => import("./components/MEGATV"), {
   ssr: false,
 });
@@ -270,6 +271,12 @@ export default function Home() {
                   <div className="mb-8 text-xl">
                     <p>PROJECTIONS ///////////////////////////</p>
                     <p>Visuals Ru</p>
+                  </div>
+                  <div className="mb-8 text-xl">
+                    <p>STALLS & WORKSHOPS ////////////////////</p>
+                    <p>Isn'tses</p>
+                    <p>Engineer</p>
+                    {/* <p>Machines That Go Beep</p> */}
                   </div>
                   <p className="text-lg mb-8">
                     Home cooked vegan food will be available from 4-8pm.
