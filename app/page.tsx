@@ -89,7 +89,9 @@ export default function Home() {
                     gatheralltheelectronics@gmail.com and we will sort you out.
                   </p>
                 </div>
-                <img src="/posters/6.webp" className="mb-16" />
+                <div className="mb-16">
+                  <img src="/posters/6.webp" />
+                </div>
                 <h2 className="text-[32px] mb-4 title textoutline green text-center">
                   <WordRepeat>
                     <LetterPositioning>LINEUP</LetterPositioning>
@@ -276,7 +278,6 @@ export default function Home() {
                     <p>STALLS & WORKSHOPS ////////////////////</p>
                     <p>Isn'tses</p>
                     <p>Engineer</p>
-                    {/* <p>Machines That Go Beep</p> */}
                   </div>
                   <p className="text-lg mb-8">
                     Home cooked vegan food will be available from 4-8pm.
@@ -288,7 +289,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-1/2">
-              <img src="/posters/6.webp" />
+              <InteractivePoster />
             </div>
           </div>
         )}
