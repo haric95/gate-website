@@ -36,8 +36,8 @@ export default () => {
 
   return (
     <main className="flex min-h-[calc(100vh-144px-64px)] flex-col md:p-16 p-4 justify-center w-full">
-      <div className="flex">
-        <div className="w-[30%]">
+      <div className="md:flex">
+        <div className="md:w-[30%]">
           <h1 className="text-[32px] mb-4 title textoutline green">
             <WordRepeat>
               <LetterPositioning>Tickets</LetterPositioning>
@@ -90,7 +90,7 @@ export default () => {
             },
           }}
         >
-          <div className="w-[70%]">
+          <div className="md:w-[70%] mt-8 md:mt-0">
             <TicketWidget
               amount={numTickets * TICKET_PRICE_POUNDS}
               numTickets={numTickets}
