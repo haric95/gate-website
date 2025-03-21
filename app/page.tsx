@@ -50,7 +50,7 @@ export default function Home() {
                 </h2>
                 <h2 className="text-[20px] mb-8 title textoutline red">
                   <WordRepeat>
-                    <LetterPositioning>4PM - 4AM</LetterPositioning>
+                    <LetterPositioning>4PM - 5AM</LetterPositioning>
                   </WordRepeat>
                 </h2>
                 <div className="text-[16px] textshadow mb-8">
@@ -183,7 +183,7 @@ export default function Home() {
                 </h2>
                 <h2 className="text-[32px] mb-8 title textoutline red">
                   <WordRepeat>
-                    <LetterPositioning>4PM - 4AM</LetterPositioning>
+                    <LetterPositioning>4PM - 5AM</LetterPositioning>
                   </WordRepeat>
                 </h2>
                 <div className="text-[20px] textshadow mb-16">
