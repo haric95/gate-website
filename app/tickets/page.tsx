@@ -35,75 +35,70 @@ export default () => {
   };
 
   return (
-    <main className="flex min-h-[calc(100vh-144px-64px)] flex-col items-center md:p-16 p-4 justify-center">
-      <h1 className="text-center text-[32px] mb-4 title textoutline red">
-        <WordRepeat>
-          <LetterPositioning>Tickets</LetterPositioning>
-        </WordRepeat>
-      </h1>
-      <h1 className="text-center text-[32px] mb-4 title textoutline blue">
-        <WordRepeat>
-          <LetterPositioning>£12</LetterPositioning>
-        </WordRepeat>
-      </h1>
+    <main className="flex min-h-[calc(100vh-144px-64px)] flex-col md:p-16 p-4 justify-center w-full">
       <div className="flex">
-        <button
-          className="mr-4 cursor-pointer p-2"
-          onClick={() => handleClick(-1)}
-        >
-          <h1
-            className="text-center text-[32px] mb-4 title textoutline green
-          "
-          >
+        <div className="w-[30%]">
+          <h1 className="text-[32px] mb-4 title textoutline green">
             <WordRepeat>
-              <LetterPositioning>-</LetterPositioning>
+              <LetterPositioning>Tickets</LetterPositioning>
             </WordRepeat>
           </h1>
-        </button>
-        <h1
-          className="text-center text-[32px] mb-4 title textoutline green
-         p-2"
-        >
-          <WordRepeat>
-            <LetterPositioning>{String(numTickets)}</LetterPositioning>
-          </WordRepeat>
-        </h1>
-        <button
-          className="ml-4 cursor-pointer p-2"
-          onClick={() => handleClick(1)}
-        >
-          <h1
-            className="text-center text-[32px] mb-4 title textoutline green
-          "
-          >
+          <h1 className="text-[32px] mb-4 title textoutline blue">
             <WordRepeat>
-              <LetterPositioning>+</LetterPositioning>
+              <LetterPositioning>£12</LetterPositioning>
             </WordRepeat>
           </h1>
-        </button>
-      </div>
-      <Elements
-        stripe={stripePromise}
-        options={{
-          mode: "payment",
-          amount: numTickets * TICKET_PRICE_POUNDS * 100,
-          currency: "gbp",
+          <div className="flex">
+            <button
+              className="mr-4 cursor-pointer"
+              onClick={() => handleClick(-1)}
+            >
+              <h1 className="text-[32px] mb-4 title textoutline red redhov clickable">
+                -
+              </h1>
+            </button>
+            <h1 className="text-[32px] mb-4 title textoutline red pl-2">
+              <WordRepeat>
+                <LetterPositioning>{String(numTickets)}</LetterPositioning>
+              </WordRepeat>
+            </h1>
+            <button
+              className="ml-4 cursor-pointer"
+              onClick={() => handleClick(1)}
+            >
+              <h1 className="text-[32px] mb-4 title textoutline red redhov clickable">
+                +
+              </h1>
+            </button>
+          </div>
+          <p>Tickets are available exclusively through our website.</p>
+          <p>This means more money directly to artists.</p>
+        </div>
+        <Elements
+          stripe={stripePromise}
+          options={{
+            mode: "payment",
+            amount: numTickets * TICKET_PRICE_POUNDS * 100,
+            currency: "gbp",
 
-          appearance: {
-            variables: {
-              fontFamily: "mono",
-              colorBackground: "#080808",
-              colorText: "white",
+            appearance: {
+              variables: {
+                fontFamily: "mono",
+                colorBackground: "#080808",
+                colorText: "white",
+              },
             },
-          },
-        }}
-      >
-        <TicketWidget
-          amount={numTickets * TICKET_PRICE_POUNDS}
-          numTickets={numTickets}
-          setNumTickets={setNumTickets}
-        />
-      </Elements>
+          }}
+        >
+          <div className="w-[70%]">
+            <TicketWidget
+              amount={numTickets * TICKET_PRICE_POUNDS}
+              numTickets={numTickets}
+              setNumTickets={setNumTickets}
+            />
+          </div>
+        </Elements>
+      </div>
     </main>
   );
 };

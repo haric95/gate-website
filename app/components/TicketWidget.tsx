@@ -84,7 +84,7 @@ export default ({ amount }: TicketWidgetProps) => {
   };
 
   return (
-    <div className="w-full h-full p-8 border-2 border-white bg-black inputoutline">
+    <div className="w-full h-full md:p-8 p-0 md:border-2 md:border-white border-black bg-black md:inputoutline">
       <p className="mb-4 text-white text-[24px] bold">
         Pay: £{amount.toFixed(2)}
       </p>
@@ -205,7 +205,7 @@ export default ({ amount }: TicketWidgetProps) => {
               <p className="text-white text-lg">Payment Details:</p>
               {clientSecret && (
                 <div
-                  className={`${errorMessage ? "border-red-500" : "border-white"} border-2 p-8`}
+                  className={`${errorMessage ? "border-red-500" : "border-white"} border-2 md:p-8 p-4`}
                 >
                   <PaymentElement
                     options={{

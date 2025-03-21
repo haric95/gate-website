@@ -107,8 +107,11 @@ export default function Home() {
                       <img src="/logo.png" className="inline h-[32px]" />
                     </div>
                     <div className="flex">
-                      <p>Internal Object + Silkenste</p>
-                      <img src="/logo.png" className="inline h-[32px]" />
+                      <p>
+                        Internal Object
+                        <img src="/logo.png" className="inline h-[32px]" /> +
+                        Silkenste
+                      </p>
                     </div>
                     <div className="flex">
                       <p>Lissener</p>
@@ -234,8 +237,11 @@ export default function Home() {
                       <img src="/logo.png" className="inline h-[32px]" />
                     </div>
                     <div className="flex">
-                      <p>Internal Object + Silkenste</p>
-                      <img src="/logo.png" className="inline h-[32px]" />
+                      <p>
+                        Internal Object
+                        <img src="/logo.png" className="inline h-[32px]" /> +
+                        Silkenste
+                      </p>
                     </div>
                     <div className="flex">
                       <p>Lissener</p>
