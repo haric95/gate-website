@@ -42,22 +42,22 @@ export default function Home() {
           <div className="w-full">
             <div className="flex flex-col">
               <div className="flex flex-col items-start justify-center w-full">
-                <h1 className="text-[20px] mb-4 title textoutline green">
+                <h1 className="text-[24px] mb-0 title textoutline green">
                   <WordRepeat>
-                    <LetterPositioning>
-                      GATE @ The Distillery N17
-                    </LetterPositioning>
+                    <LetterPositioning>GATE @ The Distillery</LetterPositioning>
                   </WordRepeat>
                 </h1>
-                <h2 className="text-[20px] mb-4 title textoutline blue">
-                  <WordRepeat>
-                    <LetterPositioning>18 APR 25</LetterPositioning>
-                  </WordRepeat>
+                <h1 className="text-[16px] mb-0 title textoutline green">
+                  <LetterPositioning>UNIT 25, MILL MEAD ROAD</LetterPositioning>
+                </h1>
+                <h1 className="text-[16px] mb-2 title textoutline green">
+                  <LetterPositioning>N17 9QU</LetterPositioning>
+                </h1>
+                <h2 className="text-[16px] mb-2 title textoutline blue">
+                  <LetterPositioning>18 APR 25</LetterPositioning>
                 </h2>
-                <h2 className="text-[20px] mb-8 title textoutline red">
-                  <WordRepeat>
-                    <LetterPositioning>4PM - 5AM</LetterPositioning>
-                  </WordRepeat>
+                <h2 className="text-[16px] mb-8 title textoutline red">
+                  <LetterPositioning>4PM - 5AM</LetterPositioning>
                 </h2>
                 <div className="text-[16px] textshadow mb-8">
                   <p className="h-[144px]">
@@ -182,22 +182,22 @@ export default function Home() {
           <div className="flex w-full">
             <div className="flex flex-col w-1/2 mr-8">
               <div className="flex flex-col items-start justify-center w-full">
-                <h1 className="md:text-[32px] text-[24px] mb-4 title textoutline green">
+                <h1 className="md:text-[36px] text-[24px] mb-0 title textoutline green">
                   <WordRepeat>
-                    <LetterPositioning>
-                      GATE @ The Distillery N17
-                    </LetterPositioning>
+                    <LetterPositioning>GATE @ The Distillery</LetterPositioning>
                   </WordRepeat>
                 </h1>
-                <h2 className="text-[32px] mb-4 title textoutline blue">
-                  <WordRepeat>
-                    <LetterPositioning>18 APR 25</LetterPositioning>
-                  </WordRepeat>
+                <h1 className="md:text-[24px] text-[24px] mb-0 title textoutline green">
+                  <LetterPositioning>UNIT 25, MILL MEAD ROAD</LetterPositioning>
+                </h1>
+                <h1 className="md:text-[24px] text-[24px] mb-4 title textoutline green">
+                  <LetterPositioning>N17 9QU</LetterPositioning>
+                </h1>
+                <h2 className="text-[24px] mb-0 title textoutline blue">
+                  <LetterPositioning>18 APR 25</LetterPositioning>
                 </h2>
-                <h2 className="text-[32px] mb-8 title textoutline red">
-                  <WordRepeat>
-                    <LetterPositioning>4PM - 5AM</LetterPositioning>
-                  </WordRepeat>
+                <h2 className="text-[24px] mb-8 title textoutline red">
+                  <LetterPositioning>4PM - 5AM</LetterPositioning>
                 </h2>
                 <div className="text-[20px] textshadow mb-16">
                   <p className="h-[180px]">
