@@ -49,7 +49,7 @@ export async function POST(request: Request) {
   try {
     // @ts-ignore
     await sheets.spreadsheets.values.append({
-      spreadsheetId: "1IsFzCk1h9hkxpQ1hAumB0S5UGt28tRcJquqKz5UE_2I",
+      spreadsheetId: "1mkg6J0reXVkv5WzS4yijReMGMC9DteZWxbhZbEdOsG4",
       range: "Sheet1",
       valueInputOption: "USER_ENTERED",
       resource: {
