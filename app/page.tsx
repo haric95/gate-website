@@ -152,6 +152,11 @@ export default function Home() {
                     <p>PROJECTIONS //////////////</p>
                     <p>Visuals Ru</p>
                   </div>
+                  <div className="mb-8 text-xl">
+                    <p>STALLS & WORKSHOPS ////////////////////</p>
+                    <p>Isn'tses</p>
+                    <p>Engineer</p>
+                  </div>
                   <p className="text-lg mb-8">
                     Home cooked vegan food will be available from 4-8pm.
                   </p>
