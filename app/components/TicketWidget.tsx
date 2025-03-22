@@ -131,7 +131,7 @@ export default ({ amount }: TicketWidgetProps) => {
                 <div className="w-full">
                   <p className="text-white text-lg">Full Name:</p>
                   <input
-                    className={`bg-black text-white font-mono w-full ${errors.name ? "border-red-500" : "border-white"} border-2  p-2 ${errors.name && "red"}`}
+                    className={`bg-black text-white font-mono w-full ${errors.name ? "border-red-500" : "border-white"} border-2  p-2 ${errors.name && "red"} inputoutline`}
                     style={{ maxWidth: "380px" }}
                     type="text"
                     name="name"
@@ -155,7 +155,7 @@ export default ({ amount }: TicketWidgetProps) => {
                 <div className="w-full">
                   <p className="text-white text-lg">Email Address:</p>
                   <input
-                    className={`bg-black text-white font-mono w-full ${errors.email ? "border-red-500" : "border-white"} border-2  p-2 ${errors.email && "red"}`}
+                    className={`bg-black text-white font-mono w-full ${errors.email ? "border-red-500" : "border-white"} border-2  p-2 ${errors.email && "red"} inputoutline`}
                     style={{ maxWidth: "380px" }}
                     type="email"
                     name="email"
@@ -182,7 +182,7 @@ export default ({ amount }: TicketWidgetProps) => {
                   setFieldValue("mailingList", !values.mailingList);
                 }}
               >
-                <input type="checkbox" className="w-0 h-0" />
+                <input type="checkbox" className="w-0 h-0 inputoutline" />
                 <div>
                   {values.mailingList ? (
                     <GrCheckboxSelected
@@ -205,7 +205,7 @@ export default ({ amount }: TicketWidgetProps) => {
               <p className="text-white text-lg">Payment Details:</p>
               {clientSecret && (
                 <div
-                  className={`${errorMessage ? "border-red-500" : "border-white"} border-2 md:p-8 p-4`}
+                  className={`${errorMessage ? "border-red-500" : "border-white"} border-2 md:p-8 p-4 inputoutline`}
                 >
                   <PaymentElement
                     options={{
@@ -219,7 +219,7 @@ export default ({ amount }: TicketWidgetProps) => {
               )}
               <button
                 type="submit"
-                className={`w-full bg-black text-white text-center mt-8 p-4 border-[#369d06] border-2 inputoutline green ${loading && "animate-pulse pointer-events-none cursor-not-allowed"} ${!isValid && "pointer-events-none cursor-not-allowed bg-gray-500 border-[#369d06]"}`}
+                className={`w-full bg-black text-white text-center mt-8 p-4 border-[#369d06] border-2 inputoutline green ${loading && "animate-pulse pointer-events-none cursor-not-allowed"} ${!isValid && "pointer-events-none cursor-not-allowed opacity-10 border-[#369d06]"}`}
               >
                 {loading ? "Submitting" : "Submit"}
               </button>
