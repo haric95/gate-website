@@ -49,7 +49,218 @@ export const ARCHIVE_DATA: Archive = {
       date: new Date(2024, 4, 2),
       location: "Mapps Cafe, Hackney Wick",
       coverImageUrl: "/posters/CompilationRelease.jpg",
-      imageUrls: [],
+      imageUrls: [
+        {
+          url: "/images/MAPPS/Harri/1.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/2.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/3.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/4.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/5.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/6.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/7.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/8.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/9.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/10.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/11.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/12.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/13.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/14.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/15.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/16.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/17.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/18.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/19.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/20.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/21.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/22.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/23.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/24.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/25.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/26.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/27.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/28.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/29.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/30.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Harri/31.webp",
+          alt: "image",
+          credit: "Harri Sharpe",
+        },
+        {
+          url: "/images/MAPPS/Jamie/1.webp",
+          alt: "image",
+          credit: "Jamie Goring",
+        },
+        {
+          url: "/images/MAPPS/Jamie/2.webp",
+          alt: "image",
+          credit: "Jamie Goring",
+        },
+        {
+          url: "/images/MAPPS/Jamie/3.webp",
+          alt: "image",
+          credit: "Jamie Goring",
+        },
+        {
+          url: "/images/MAPPS/Jamie/4.webp",
+          alt: "image",
+          credit: "Jamie Goring",
+        },
+        {
+          url: "/images/MAPPS/Jamie/5.webp",
+          alt: "image",
+          credit: "Jamie Goring",
+        },
+        {
+          url: "/images/MAPPS/Jamie/6.webp",
+          alt: "image",
+          credit: "Jamie Goring",
+        },
+        {
+          url: "/images/MAPPS/Jamie/7.webp",
+          alt: "image",
+          credit: "Jamie Goring",
+        },
+        {
+          url: "/images/MAPPS/Jamie/8.webp",
+          alt: "image",
+          credit: "Jamie Goring",
+        },
+        {
+          url: "/images/MAPPS/Jamie/9.webp",
+          alt: "image",
+          credit: "Jamie Goring",
+        },
+        {
+          url: "/images/MAPPS/Jamie/10.webp",
+          alt: "image",
+          credit: "Jamie Goring",
+        },
+        {
+          url: "/images/MAPPS/Jamie/11.webp",
+          alt: "image",
+          credit: "Jamie Goring",
+        },
+      ],
       contentLinks: [],
       descriptionMarkup: `
 Hidden under a jumper and smuggled up the ladder,&nbsp; \n 
@@ -69,9 +280,249 @@ The GATE Executants have been busy excavating waveforms from the depths of their
       date: [new Date(2023, 7, 4), new Date(2023, 7, 6)],
       location: "Secret Location",
       coverImageUrl: "/posters/GRABATENTEVERYBODY.jpg",
-      imageUrls: [],
+      imageUrls: [
+        {
+          url: "/images/GRABATENTEVERYBODY/Isntses/1.webp",
+          alt: "image",
+          credit: "Isn'tses",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Isntses/2.webp",
+          alt: "image",
+          credit: "Isn'tses",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Isntses/3.webp",
+          alt: "image",
+          credit: "Isn'tses",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Isntses/4.webp",
+          alt: "image",
+          credit: "Isn'tses",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Isntses/5.webp",
+          alt: "image",
+          credit: "Isn'tses",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Isntses/6.webp",
+          alt: "image",
+          credit: "Isn'tses",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Isntses/7.webp",
+          alt: "image",
+          credit: "Isn'tses",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Isntses/8.webp",
+          alt: "image",
+          credit: "Isn'tses",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Isntses/9.webp",
+          alt: "image",
+          credit: "Isn'tses",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Maxime/1.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Maxime/2.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Maxime/3.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Maxime/4.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Maxime/5.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Maxime/6.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Maxime/7.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Maxime/8.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Maxime/9.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Maxime/10.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Dario/1.webp",
+          alt: "image",
+          credit: "Dario Mongiardi",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Dario/2.webp",
+          alt: "image",
+          credit: "Dario Mongiardi",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Dario/3.webp",
+          alt: "image",
+          credit: "Dario Mongiardi",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Dario/4.webp",
+          alt: "image",
+          credit: "Dario Mongiardi",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/1.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/2.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/3.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/4.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/5.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/6.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/7.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/8.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/9.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/10.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/11.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/12.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/13.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/14.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/15.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/16.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/17.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/18.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/19.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/20.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/GRABATENTEVERYBODY/Colin/21.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+      ],
       contentLinks: [],
-      descriptionMarkup: `<Info Coming Soon>`,
+      descriptionMarkup: `
+INDOORS//OUTDOORS
+LIVE//DJ//PERFORMANCE//INSTALLATIONS
+2 SOUND SYSTEMS
+A FIELD AND A BARN
+120 PEOPLE
+SECRET LOCATION
+&nbsp; \n
+devout to our principles
+we brave the next stimulus
+of what is now tradition
+&nbsp; \n
+well rehearsed
+and unequipped beyond instinct
+let us converge
+upon the granted terrain
+&nbsp; \n
+The second instalment of the GATE experimental music and arts festival, with live sets, performances, DJs, workshops and installations drawn from the GATE gestalt consciousness and exciting artists from the London, UK and European scene, on a top-class Turbosoud rig. Each ticket included four home-cooked meals cooked up by our resident flavourblazers, as well as access to an installation of soft pillows and curated zine library, a subconscious drawing workshop with Buket Yenidoğan, a durational performance by Olive Hardy involving petroleum jelly. Sokora Mortal eased us into things with a noise, lounge and spoken word set, followed by ex.sses with their mind-bending hauntological live set. Boundary-pushing, high-energy duo Torn Relics drew to a close the first night of outdoor programming, accompanied by a 6-metre-tall pole performance. scary hari’s [GATE] live set got us going in the Barn, featuring three dimensions you did not even know about. Ignominious Canadian sensation SKIDOOJACKET [GATE] led us straight into an electro-frenzy, before the dance-floor selections and sprawling dubbed vocals of Waxwing + Rex Domino. We had dubstep slammers from proto//spacer [GATE], and mashed rhythms from Ab Ru, MOB’s own lover-of-ze-sub. Lewi Boome’s dizzying rhythms and warped textures took us to 5am through a range of off-kilter club tracks. A rare daylight excursion by Dome Zero, whose off-guard abrasiveness and rhythmic inventiveness only whetted our palates for that which was to come. Then, Laboranta and Neo Fung’s secret cabbage performance took place, before a live IDM set from our resident organ-grinder Bubble People [GATE]. Left-field antics: ritualistic rhythms from Seshtan [GATE] and a live set from Craft Ebbing [GATE] that you can only describe as sheet music going through a paper shredder. Ella Ex Machina [GATE] treated the masses to live coded electronic hardcore. We were spellbound by Fiesta Soundsystem’s jungle-techno rhythmic recursions and Nosewise’s new incursion into hypnotic, richly-textured jazz and new-wave. Psychogeographic synthesiser circuits were provided by the duo Isn’tses, and a hardcore noise meditation from chief whip Internal Object [GATE]. Everyone was gassed to hear Spiral Tribe legend Kim Cosmik, LNR's wonky controlled chaos. Two belting sets from sinny [GATE] and Oddman [GATE] carried us through to the end of Saturday night. On Sunday, a harp and flute live set from Marysia Osu + YUIS soothed our haggard souls, as did Hidden Sounds’ own Frankie Bubblegum presents Planet Panama. Drawing the festival to a close was the most awaited DJ set of the DJ season: DJ Sean Davies.
+
+      `,
     },
     {
       title: "GATE - 5",
@@ -113,16 +564,388 @@ The GATE Executants have been busy excavating waveforms from the depths of their
         { url: "images/5/32.webp", alt: "image", credit: "Lorella Bianco" },
       ],
       contentLinks: [],
-      descriptionMarkup: `<Info Coming Soon>`,
+      descriptionMarkup: `the hiatus has ceased
+we appear underground
+charting the path of the orb
+&nbsp; \n
+ground level window
+into varied expressions
+&nbsp; \n
+experience at your leisure
+challenged
+yet galvanised `,
     },
     {
-      title: "PROPAGATE Fesival",
+      title: "PROPAGATE Festival",
       date: [new Date(2022, 6, 5), new Date(2022, 6, 7)],
       location: "Secret Location",
       coverImageUrl: "/posters/PROPAGATE.jpg",
-      imageUrls: [],
+      imageUrls: [
+        {
+          url: "/images/PROPAGATE/Euan/1.webp",
+          alt: "image",
+          credit: "Euan McGinty",
+        },
+        {
+          url: "/images/PROPAGATE/Euan/2.webp",
+          alt: "image",
+          credit: "Euan McGinty",
+        },
+        {
+          url: "/images/PROPAGATE/Euan/3.webp",
+          alt: "image",
+          credit: "Euan McGinty",
+        },
+        {
+          url: "/images/PROPAGATE/Euan/4.webp",
+          alt: "image",
+          credit: "Euan McGinty",
+        },
+        {
+          url: "/images/PROPAGATE/Euan/5.webp",
+          alt: "image",
+          credit: "Euan McGinty",
+        },
+        {
+          url: "/images/PROPAGATE/Euan/6.webp",
+          alt: "image",
+          credit: "Euan McGinty",
+        },
+        {
+          url: "/images/PROPAGATE/Euan/7.webp",
+          alt: "image",
+          credit: "Euan McGinty",
+        },
+        {
+          url: "/images/PROPAGATE/Euan/8.webp",
+          alt: "image",
+          credit: "Euan McGinty",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/1.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/2.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/3.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/4.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/5.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/6.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/7.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/8.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/9.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/10.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/11.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/12.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/13.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/14.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/15.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/16.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Jan/17.webp",
+          alt: "image",
+          credit: "Jan Bernet",
+        },
+        {
+          url: "/images/PROPAGATE/Hari/1.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+
+        {
+          url: "/images/PROPAGATE/Maxime/1.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/2.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/3.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/4.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/5.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/6.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/7.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/8.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/9.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/10.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/11.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/12.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/13.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/14.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/15.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/16.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/17.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/18.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/19.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/20.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/21.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/22.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/23.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/24.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/25.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Maxime/26.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Hari/2.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Hari/3.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Hari/4.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Hari/5.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Colin/1.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Colin/2.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Colin/3.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Colin/4.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Colin/5.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Colin/6.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Colin/7.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Colin/8.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Colin/9.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Colin/10.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Colin/11.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Colin/12.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+        {
+          url: "/images/PROPAGATE/Colin/13.webp",
+          alt: "image",
+          credit: "GATE",
+        },
+      ],
       contentLinks: [],
-      descriptionMarkup: `<Info Coming Soon>`,
+      descriptionMarkup: `our recognition
+of resources and purpose
+fortifies a sense of belonging
+against forced autonomy
+&nbsp; \n
+this is an exposition
+a result of community
+&nbsp; \n
+an extension of prior motives
+beyond familiar enclosures
+&nbsp; \n
+INDOORS//OUTDOORS
+LIVE//DJ//PERFORMANCE//SAUNA
+2 SOUND SYSTEMS
+A FIELD AND A BARN
+120 PEOPLE
+SECRET FARM LOCATION`,
     },
     {
       title: "GATE - 4",
@@ -241,7 +1064,7 @@ ODDMAN
         { url: "/images/1/2.webp", alt: "image", credit: "GATE" },
       ],
       contentLinks: [],
-      descriptionMarkup: `<Info Coming Soon>`,
+      descriptionMarkup: `It Begins`,
     },
   ],
   radio: {
