@@ -288,7 +288,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="w-1/2 flex justify-center items-start">
               <InteractivePoster />
             </div>
           </div>

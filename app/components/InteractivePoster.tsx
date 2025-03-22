@@ -21,6 +21,7 @@ export const InteractivePoster = () => {
         transform: mousePos
           ? `perspective(2400px) rotateX(${mousePos.x}deg) rotateY(${mousePos.y}deg)`
           : undefined,
+        maxHeight: "calc(100vh - 144px)",
       }}
     />
   );
