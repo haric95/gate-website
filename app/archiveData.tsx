@@ -120,11 +120,11 @@ export const ARCHIVE_DATA: Archive = {
           alt: "image",
           credit: "Harri Sharpe",
         },
-        {
-          url: "/images/MAPPS/Harri/15.webp",
-          alt: "image",
-          credit: "Harri Sharpe",
-        },
+        // {
+        //   url: "/images/MAPPS/Harri/15.webp",
+        //   alt: "image",
+        //   credit: "Harri Sharpe",
+        // },
         {
           url: "/images/MAPPS/Harri/16.webp",
           alt: "image",
