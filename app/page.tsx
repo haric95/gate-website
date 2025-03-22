@@ -30,6 +30,7 @@ const TicketWidget = dynamic(() => import("./components/TicketWidget"), {
 export default function Home() {
   const { isMobile } = useIsMobile();
   const { loaded } = useContext(GlobalContext);
+  console.log(loaded);
   return (
     <main
       className="flex flex-col items-center justify-center p-4 md:p-16"
@@ -48,9 +49,6 @@ export default function Home() {
                     </LetterPositioning>
                   </WordRepeat>
                 </h1>
-                <p>Unit 25</p>
-                <p>Mill Mead Road</p>
-                <p>N17 9QU</p>
                 <h2 className="text-[20px] mb-4 title textoutline blue">
                   <WordRepeat>
                     <LetterPositioning>18 APR 25</LetterPositioning>
@@ -184,18 +182,6 @@ export default function Home() {
                     <LetterPositioning>
                       GATE @ The Distillery N17
                     </LetterPositioning>
-                  </WordRepeat>
-                </h1>
-                <h1 className="md:text-[32px] text-[24px] mb-4 title textoutline green">
-                  <WordRepeat>
-                    <LetterPositioning>
-                      UNIT 25, MILL MEAD ROAD
-                    </LetterPositioning>
-                  </WordRepeat>
-                </h1>
-                <h1 className="md:text-[32px] text-[24px] mb-4 title textoutline green">
-                  <WordRepeat>
-                    <LetterPositioning>N17 9QU</LetterPositioning>
                   </WordRepeat>
                 </h1>
                 <h2 className="text-[32px] mb-4 title textoutline blue">
