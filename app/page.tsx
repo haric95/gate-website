@@ -7,6 +7,8 @@ import { useIsMobile } from "./hooks/useIsMobile";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { InteractivePoster } from "./components/InteractivePoster";
+import { useContext } from "react";
+import { GlobalContext } from "./state/GlobalState";
 const MEGATV = dynamic(() => import("./components/MEGATV"), {
   ssr: false,
 });
@@ -26,6 +28,8 @@ const TicketWidget = dynamic(() => import("./components/TicketWidget"), {
 
 export default function Home() {
   const { isMobile } = useIsMobile();
+  const { loaded } = useContext(GlobalContext);
+  console.log(loaded);
   return (
     <main
       className="flex flex-col items-center justify-center p-4 md:p-16"
@@ -55,17 +59,19 @@ export default function Home() {
                 </h2>
                 <div className="text-[16px] textshadow mb-8">
                   <p className="h-[144px]">
-                    <TypeAnimation
-                      sequence={[
-                        "Recall GATE\ndaughters of the forgotten zones\nflung scattered to the wind\nacross seas and rivers\nto reconvene in\nsha(ttere)red solitude",
-                      ]}
-                      wrapper="span"
-                      speed={60}
-                      style={{
-                        display: "inline-block",
-                        whiteSpace: "pre-line",
-                      }}
-                    />
+                    {loaded && (
+                      <TypeAnimation
+                        sequence={[
+                          "Recall GATE\ndaughters of the forgotten zones\nflung scattered to the wind\nacross seas and rivers\nto reconvene in\nsha(ttere)red solitude",
+                        ]}
+                        wrapper="span"
+                        speed={60}
+                        style={{
+                          display: "inline-block",
+                          whiteSpace: "pre-line",
+                        }}
+                      />
+                    )}
                   </p>
                 </div>
                 <div className="mb-16">
@@ -188,17 +194,19 @@ export default function Home() {
                 </h2>
                 <div className="text-[20px] textshadow mb-16">
                   <p className="h-[180px]">
-                    <TypeAnimation
-                      sequence={[
-                        "Recall GATE\ndaughters of the forgotten zones\nflung scattered to the wind\nacross seas and rivers\nto reconvene in\nsha(ttere)red solitude",
-                      ]}
-                      wrapper="span"
-                      speed={60}
-                      style={{
-                        display: "inline-block",
-                        whiteSpace: "pre-line",
-                      }}
-                    />
+                    {loaded && (
+                      <TypeAnimation
+                        sequence={[
+                          "Recall GATE\ndaughters of the forgotten zones\nflung scattered to the wind\nacross seas and rivers\nto reconvene in\nsha(ttere)red solitude",
+                        ]}
+                        wrapper="span"
+                        speed={60}
+                        style={{
+                          display: "inline-block",
+                          whiteSpace: "pre-line",
+                        }}
+                      />
+                    )}
                   </p>
                 </div>
                 <div className="mb-16">

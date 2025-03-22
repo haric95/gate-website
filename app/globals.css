@@ -183,3 +183,19 @@ body {
   transform: translateY(-2px);  
   box-shadow: -1px -1px 0 #078b9d, 1px -1px 0 #078b9d, -1px 5px 0 #078b9d, 1px 5px 0 #078b9d;
 }
+
+@keyframes loader {
+  0% {
+    filter: blur(8px);
+    transform: scale(0.95)
+  }
+  100% {
+    filter: blur(0px);
+    trasnform: scale(1);
+  }
+}
+
+.loader {
+  animation: loader ease 2000ms;
+  animation-fill-mode: forwards;
+}

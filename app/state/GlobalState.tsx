@@ -13,15 +13,19 @@ export type GlobalContextType = {
   setShaderHighlightedElement: React.Dispatch<
     React.SetStateAction<Element | null>
   >;
+  loaded: boolean;
+  setLoaded: React.Dispatch<React.SetStateAction<boolean>> | null;
 };
 
 export const GlobalContext = createContext<GlobalContextType>({
   galleryImages: null,
   galleryIndex: null,
   shaderHighlightedElement: null,
+  loaded: false,
   setGalleryImages: () => {},
   setGalleryIndex: () => {},
   setShaderHighlightedElement: () => {},
+  setLoaded: null,
 });
 
 export default ({ children }: PropsWithChildren) => {
@@ -31,6 +35,7 @@ export default ({ children }: PropsWithChildren) => {
     useState<GlobalContextType["galleryImages"]>(null);
   const [shaderHighlightedElement, setShaderHighlightedElement] =
     useState<GlobalContextType["shaderHighlightedElement"]>(null);
+  const [loaded, setLoaded] = useState<GlobalContextType["loaded"]>(false);
 
   return (
     <GlobalContext.Provider
@@ -41,6 +46,8 @@ export default ({ children }: PropsWithChildren) => {
         setGalleryImages,
         shaderHighlightedElement,
         setShaderHighlightedElement,
+        loaded,
+        setLoaded,
       }}
     >
       {children}
