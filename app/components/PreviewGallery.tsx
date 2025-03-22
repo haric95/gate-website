@@ -1,5 +1,6 @@
 import { useCallback, useContext, useRef } from "react";
 import { A11y, Navigation } from "swiper/modules";
+import Image from "next/image";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -50,7 +51,14 @@ export const PreviewGallery = ({ imageUrls }: PreviewGalleryProps) => {
                     setGalleryIndex(index);
                   }}
                 >
-                  <img src={image.url} className="h-full" />
+                  <Image
+                    src={image.url}
+                    className="h-full"
+                    alt={image.alt}
+                    height={128}
+                    width={128}
+                    style={{ width: "auto", height: "128px" }}
+                  />
                 </button>
               </SwiperSlide>
             );
