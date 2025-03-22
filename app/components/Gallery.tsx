@@ -43,7 +43,7 @@ export const Gallery = ({}: GalleryProps) => {
           className="fixed w-screen h-screen top-0 left-0 z-[99]"
         >
           <div className="w-full h-full relative">
-            <div className="absolute bg-black opacity-90 w-full h-full" />
+            <div className="absolute bg-black opacity-95 w-full h-full" />
             <div
               className="absolute w-full h-full flex justify-center items-center"
               onClick={(e) => {
