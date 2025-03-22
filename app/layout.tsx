@@ -31,10 +31,7 @@ export default function RootLayout({
         <Header />
 
         <LayoutTransition {...DEFAULT_TRANSITION}>
-          <GlobalContextProvider>
-            <LoadingScreen />
-            {children}
-          </GlobalContextProvider>{" "}
+          <GlobalContextProvider>{children}</GlobalContextProvider>{" "}
         </LayoutTransition>
         <footer className="w-full h-16 flex justify-center items-center">
           <p>© GATE {new Date().getFullYear()}</p>

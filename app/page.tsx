@@ -9,6 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 import { InteractivePoster } from "./components/InteractivePoster";
 import { useContext } from "react";
 import { GlobalContext } from "./state/GlobalState";
+import { LoadingScreen } from "./components/LoadingScreen";
 const MEGATV = dynamic(() => import("./components/MEGATV"), {
   ssr: false,
 });
@@ -36,6 +37,7 @@ export default function Home() {
       style={{ minHeight: "calc(100vh - 144px)" }}
     >
       <div className="flex flex-col items-center w-full">
+        <LoadingScreen />
         {isMobile === null ? null : isMobile ? (
           <div className="w-full">
             <div className="flex flex-col">

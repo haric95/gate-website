@@ -17,18 +17,16 @@ export const LoadingScreen = () => {
   }, [loaded, setLoaded]);
 
   return (
-    !loaded && (
+    <div
+      className={`w-screen h-screen fixed top-0 left-0 bg-black flex justify-center items-center pointer-events-none transition-opacity duration-500 ${loaded ? "opacity-0" : "opacity-100"}`}
+      style={{ zIndex: 1000 }}
+    >
       <div
-        className="w-screen h-screen fixed top-0 left-0 bg-black flex justify-center items-center"
-        style={{ zIndex: 1000 }}
+        className="animate-pulse w-fit h-fit md:w-1/4 w-1/2"
+        style={{ filter: "invert()" }}
       >
-        <div
-          className="animate-pulse w-fit h-fit md:w-1/4 w-1/2"
-          style={{ filter: "invert()" }}
-        >
-          <img src="/logo.webp" className="blur loader w-full h-full" />
-        </div>
+        <img src="/logo.webp" className="blur loader w-full h-full" />
       </div>
-    )
+    </div>
   );
 };
