@@ -100,6 +100,27 @@ export default function Home() {
                 <div className="mb-16">
                   <img src="/posters/6.webp" />
                 </div>
+                <div className=" mb-8">
+                  <p className="mb-2">
+                    Live Experimental Electronics, Hip Hop, hefty Techno,
+                    Breakcore, Noise. A rigorously programmed limit test for
+                    your aural sense.
+                  </p>
+                  <p className="mb-2">
+                    Physical and Visual invigorations distributed in adherence
+                    to a traditional GATE recipe.
+                  </p>
+                  <p className="mb-2">
+                    Home cooked vegan food will be available from 4-8pm.
+                  </p>
+                  <p>
+                    Workshop, stalls, and interactive features will be present{" "}
+                    <span className="text-[#078b9d] font-mono">
+                      more info to follow soon
+                    </span>
+                    .
+                  </p>
+                </div>
                 <h2 className="text-[32px] mb-4 title textoutline green text-center">
                   <WordRepeat>
                     <LetterPositioning>LINEUP</LetterPositioning>
@@ -236,6 +257,27 @@ export default function Home() {
                   <p className="text-sm w-2/3">
                     Please contact GATE through Instagram or at
                     gatheralltheelectronics@gmail.com and we will sort you out.
+                  </p>
+                </div>
+                <div className=" mb-16 text-lg">
+                  <p className="mb-2">
+                    Live Experimental Electronics, Hip Hop, hefty Techno,
+                    Breakcore, Noise. A rigorously programmed limit test for
+                    your aural sense.
+                  </p>
+                  <p className="mb-2">
+                    Physical and Visual invigorations distributed in adherence
+                    to a traditional GATE recipe.
+                  </p>
+                  <p className="mb-2">
+                    Home cooked vegan food will be available from 4-8pm.
+                  </p>
+                  <p>
+                    Workshop, stalls, and interactive features will be present{" "}
+                    <span className="text-[#078b9d] font-mono">
+                      more info to follow soon
+                    </span>
+                    .
                   </p>
                 </div>
                 <h2 className="text-[32px] mb-4 title textoutline green text-center">
