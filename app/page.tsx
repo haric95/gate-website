@@ -147,6 +147,7 @@ export default function Home() {
                       <p>Martha</p>
                       <img src="/logo.png" className="inline h-[32px]" />
                     </div>
+                    <p>Ella Ex Machina</p>
                   </div>
                   <div className="mb-8 text-xl">
                     <p>PROJECTIONS //////////////</p>
@@ -284,6 +285,7 @@ export default function Home() {
                       <p>Martha</p>
                       <img src="/logo.png" className="inline h-[32px]" />
                     </div>
+                    <p>Ella Ex Machina</p>
                   </div>
                   <div className="mb-8 text-xl">
                     <p>PROJECTIONS ///////////////////////////</p>
