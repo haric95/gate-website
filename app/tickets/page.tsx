@@ -37,7 +37,7 @@ export default () => {
   return (
     <main className="flex min-h-[calc(100vh-144px-64px)] flex-col md:p-16 p-4 justify-center w-full">
       <div className="md:flex">
-        <div className="md:w-[30%] mr-4">
+        <div className="md:w-[30%] md:mr-4">
           <h1 className="text-[32px] mb-4 title textoutline green">
             <WordRepeat>
               <LetterPositioning>Tickets</LetterPositioning>
