@@ -6,6 +6,7 @@ import { LayoutTransition } from "./components/LayoutTransition";
 import { DEFAULT_TRANSITION } from "./consts";
 import "./globals.css";
 import GlobalContextProvider from "./state/GlobalState";
+import { Analytics } from "@vercel/analytics/react";
 
 const mono = Share_Tech_Mono({
   weight: "400",
@@ -25,14 +26,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <script
-          defer
-          src="https://cloud.umami.is/script.js"
-          data-website-id="0d3a65ce-c81e-4e88-b5a6-27b6d2bfda75"
-        ></script>
-      </head>
       <body className={`${mono.className} ${mono.variable}`}>
+        <Analytics />
         <Header />
 
         <LayoutTransition {...DEFAULT_TRANSITION}>
