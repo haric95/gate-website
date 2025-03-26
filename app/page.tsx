@@ -100,7 +100,7 @@ export default function Home() {
                 <div className="mb-16">
                   <img src="/posters/6.webp" />
                 </div>
-                <div className=" mb-8">
+                <div className="mb-8 text-lg">
                   <p className="mb-2">
                     Live Experimental Electronics, Hip Hop, hefty Techno,
                     Breakcore, Noise. A rigorously programmed limit test for
