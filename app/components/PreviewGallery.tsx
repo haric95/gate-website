@@ -34,7 +34,7 @@ export const PreviewGallery = ({ imageUrls }: PreviewGalleryProps) => {
       <div className="w-full h-full relative">
         <Swiper
           modules={[Navigation, A11y]}
-          spaceBetween={16}
+          spaceBetween={8}
           slidesPerView={"auto"}
           onSlideChange={() => {}}
           onSwiper={(swiper) => {}}

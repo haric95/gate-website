@@ -5,12 +5,15 @@ import { A11y, Navigation } from "swiper/modules";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 import { DEFAULT_TRANSITION } from "../consts";
 import { GlobalContext } from "../state/GlobalState";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 type GalleryProps = {};
 
 export const Gallery = ({}: GalleryProps) => {
   const sliderRef = useRef<SwiperRef | null>(null);
   const [swiper, setSwiper] = useState<Swooper | null>(null);
+
+  const { isMobile } = useIsMobile();
 
   const handlePrev = useCallback(() => {
     if (!sliderRef.current) return;
@@ -44,7 +47,7 @@ export const Gallery = ({}: GalleryProps) => {
               <div className="w-3/4 h-3/4 relative">
                 <Swiper
                   modules={[Navigation, A11y]}
-                  spaceBetween={0}
+                  spaceBetween={isMobile ? 0 : 16}
                   slidesPerView={"auto"}
                   initialSlide={galleryIndex ?? 0}
                   onSlideChange={() => {}}
