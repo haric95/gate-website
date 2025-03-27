@@ -25,15 +25,6 @@ export const Gallery = ({}: GalleryProps) => {
   const { galleryImages, setGalleryImages, galleryIndex } =
     useContext(GlobalContext);
 
-  useEffect(() => {
-    if (galleryImages && galleryIndex !== null) {
-      sliderRef.current?.swiper.slideNext();
-      sliderRef.current?.swiper.slideNext();
-      sliderRef.current?.swiper.slideNext();
-    } else {
-    }
-  }, [galleryImages]);
-
   return (
     <AnimatePresence mode={"wait"}>
       {galleryImages && (
@@ -53,7 +44,7 @@ export const Gallery = ({}: GalleryProps) => {
               <div className="w-3/4 h-3/4 relative">
                 <Swiper
                   modules={[Navigation, A11y]}
-                  spaceBetween={16}
+                  spaceBetween={0}
                   slidesPerView={"auto"}
                   initialSlide={galleryIndex ?? 0}
                   onSlideChange={() => {}}
@@ -67,7 +58,7 @@ export const Gallery = ({}: GalleryProps) => {
                     return (
                       <SwiperSlide key={image.url} className="h-full !w-fit">
                         <div
-                          className="h-[95%] !w-fit flex justify-start items-center flex-col"
+                          className="h-[95%] !w-fit flex md:justify-start justify-center items-center flex-col"
                           onClick={() => {}}
                         >
                           <img
@@ -83,7 +74,7 @@ export const Gallery = ({}: GalleryProps) => {
                   })}
                 </Swiper>
                 <button
-                  className="prev-arrow absolute w-4 h-4 bg-red-500 textoutline text-[36px] top-1/2 left-[-26px] z-10 bg-transparent"
+                  className="prev-arrow absolute w-4 h-4 bg-red-500 textoutline md:text-[36px] text-[16px] top-1/2 left-[-26px] z-10 bg-transparent"
                   onClick={(e) => {
                     e.stopPropagation();
                     handlePrev();
@@ -92,7 +83,7 @@ export const Gallery = ({}: GalleryProps) => {
                   {"<"}
                 </button>
                 <button
-                  className="next-arrow absolute w-4 h-4 bg-red-500 textoutline text-[36px] top-1/2 right-[-26px] z-10"
+                  className="next-arrow absolute w-4 h-4 bg-red-500 textoutline md:text-[36px] text-[16px] top-1/2 right-[-26px] z-10"
                   onClick={(e) => {
                     e.stopPropagation();
                     handleNext();
