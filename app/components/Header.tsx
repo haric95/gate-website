@@ -25,7 +25,7 @@ void mainImage(out vec4 O,in vec2 I) {
   I*=vec2(1.,iResolution.y/iResolution.x);
   float z=.5*sin((dot(I,I)+iTime*5e-2)/.01);
   float s = smoothstep(${0.5 + (Math.random() - 0.5) * 0.25}, ${Math.random()}, mod((uv.y + iTime * ${(Math.random() - 0.5) * 0.2}) * ${10 + (Math.random() - 0.5) * 0.4}, 1.));
-  s *= smoothstep(${0.5 + (Math.random() - 0.5) * 0.25}, 0.58, mod((uv.x + -iTime * ${Math.random()} * uv.y * 0.3) * 5000., 1.));
+  s *= smoothstep(${0.5 + (Math.random() - 0.5) * 0.25}, 0.58, mod((uv.x + -iTime * ${Math.random()} * uv.y * 0.3) * 500.33891, 1.));
   s += 0.03125;
   O=vec4(vec3(s * vec3(0.5 * uv.x * ${Math.random() * 0.3}, ${0.4 + Math.random() * 0.5}, 0.2 +  ${0.7 + Math.random() * 0.2} * uv.y)), 1.0);
 }
