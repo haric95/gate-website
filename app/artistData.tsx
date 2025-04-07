@@ -19,8 +19,9 @@ export const LiveActs: ArtistListing[] = [
   {
     name: "Gus Cantor",
     type: "live",
-    bio: "",
+    bio: "Gus Cantor is based in East Anglia. His ongoing projects include operating the ANA record label, together with contributions to Drab Leisure and The Problem of England. Recent releases are available through Lost Domain and an album is forthcoming next year, comprising versions derived from recent live performances.\n\nFurther information is available at: https://www.gus-cantor.com/",
     isGate: false,
+    imageUrl: "/images/lineup/guscantor.webp",
   },
   {
     name: "Jack Dove",
