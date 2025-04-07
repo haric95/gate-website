@@ -144,7 +144,7 @@ export const workshopArtists: ArtistListing[] = [
   {
     name: "Engineer",
     type: "installation",
-    bio: `An interactive, beginner-friendly workshop on the fundamentals of modular synthesis—covering signal flow, patching techniques, and how to create and manipulate sound for both structured composition and live improvisation.\n\nLed by Engineer (@engineer_newg).`,
+    bio: `I'm Engineer, and for the past couple years I've been playing live modular synth sets for various events and underground raves. Playing for Ulnaparti, Kinesis, Tea Break Collective and Madruga Festival. All my sets are live, improvised, and made for dancing. Instagram @engineer_newg\n\nEngineer with give an interactive, beginner-friendly workshop on the fundamentals of modular synthesis—covering signal flow, patching techniques, and how to create and manipulate sound for both structured composition and live improvisation.\n\nLed by Engineer (@engineer_newg).`,
     isGate: false,
     imageUrl: "/images/lineup/engineer.webp",
   },
