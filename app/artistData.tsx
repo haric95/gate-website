@@ -89,6 +89,7 @@ export const djActs: ArtistListing[] = [
     type: "dj",
     bio: `Medallion Man is the co-founder and driving force behind Loose Lips, shaping it into a diverse musical platform since 2014. A DJ known for eclectic mixing and rave-inspired sets, he has toured the U.S. and Europe while maintaining a strong UK presence.\n\nPassionate about radio, he founded 199Radio in 2017, which evolved into Threads Radio in 2019. Committed to community-driven projects, he also co-founded the London Promoter Society with Hayley Squires, promoting unity among grassroots event organizers.\n\nThrough events, label releases, and media, he continues to bridge diverse sounds, scenes, and generations in the electronic music landscape.`,
     isGate: false,
+    imageUrl: "/images/lineup/medallionman.webp",
   },
   {
     name: "Overneath",

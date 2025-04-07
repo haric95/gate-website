@@ -41,7 +41,7 @@ export const ArtistListing = ({
     reset();
   };
 
-  const isMobile = useIsMobile();
+  const { isMobile } = useIsMobile();
 
   const isGabby = name === "Internal Object + Silkenste";
 
@@ -58,8 +58,10 @@ export const ArtistListing = ({
           bio && (isOpen ? handleClose() : handleOpen());
         }}
       >
-        <div className="flex">
-          <p className={`microgramma flex items-center text-left md:text-xl`}>
+        <div className="flex items-center">
+          <p
+            className={`microgramma flex items-center text-left md:text-xl ${isGabby ? "h-16" : "h-8"}`}
+          >
             {!!bio &&
               (isOpen ? (
                 <span style={{ transform: "translate(4px, -2px)" }}>
@@ -72,7 +74,7 @@ export const ArtistListing = ({
               ? name.split("").map((char, index) => {
                   return (
                     <span
-                      className={`font-mono ${count >= index ? "textoutline text-[24px]" : "font-mono"} ${type === "live" ? "green" : type === "dj" ? "blue" : "red"} ${index === 0 && "pl-3"} ${isGabby && isMobile && "text-sm"}`}
+                      className={`font-mono ${count >= index ? "textoutline text-[24px]" : "font-mono"} ${type === "live" ? "green" : type === "dj" ? "blue" : "red"} ${index === 0 && "pl-3"} ${isMobile && isGabby && "text-sm"}`}
                     >
                       <LetterPositioning>{char}</LetterPositioning>
                     </span>
