@@ -8,6 +8,7 @@ export const LoadingScreen = () => {
 
   useEffect(() => {
     if (!loaded && setLoaded) {
+      console.log("setting timeout");
       window.setTimeout(() => {
         setLoaded(true);
       }, 2000);

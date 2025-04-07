@@ -11,6 +11,10 @@
   font-family: Microgramma;
 }
 
+.microgramma {
+  font-family: Microgramma;
+}
+
 button, a {
   text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
   letter-spacing: 0.06em;
@@ -197,5 +201,21 @@ body {
 
 .loader {
   animation: loader ease 2000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    filter: blur(8px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn ease 250ms;
   animation-fill-mode: forwards;
 }

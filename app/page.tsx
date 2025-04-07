@@ -10,6 +10,14 @@ import { InteractivePoster } from "./components/InteractivePoster";
 import { useContext } from "react";
 import { GlobalContext } from "./state/GlobalState";
 import { LoadingScreen } from "./components/LoadingScreen";
+import { ArtistListing } from "./components/ArtistListing";
+import {
+  djActs,
+  installationArtists,
+  LiveActs,
+  visualsArtists,
+  workshopArtists,
+} from "./artistData";
 const MEGATV = dynamic(() => import("./components/MEGATV"), {
   ssr: false,
 });
@@ -30,7 +38,6 @@ const TicketWidget = dynamic(() => import("./components/TicketWidget"), {
 export default function Home() {
   const { isMobile } = useIsMobile();
   const { loaded } = useContext(GlobalContext);
-  console.log(loaded);
   return (
     <main
       className="flex flex-col items-center justify-center p-4 md:p-16"
@@ -127,65 +134,82 @@ export default function Home() {
                   </WordRepeat>
                 </h2>
                 <div>
-                  <div className="mb-8 text-xl">
-                    <p>LIVE ELECTRONIC MUSIC ///</p>
-                    <p>Jena Jang</p>
-                    <p>Gus Cantor</p>
-                    <p>Jack Dove</p>
-                    <p>Mi yá</p>
-                    <p>Cold Light</p>
-                    <div className="flex">
-                      <p>Seshtan</p>
-                      <img src="/logo.png" className="inline h-[32px]" />
-                    </div>
-                    <div className="flex">
-                      <p>
-                        Internal Object
-                        <img src="/logo.png" className="inline h-[32px]" /> +
-                        Silkenste
-                      </p>
-                    </div>
-                    <div className="flex">
-                      <p>Lissener</p>
-                      <img src="/logo.png" className="inline h-[32px]" />
-                    </div>
+                  <div className="mb-12 text-xl">
+                    <p>LIVE ELECTRONIC MUSIC ////////////////</p>
+                    {LiveActs.map((act) => {
+                      return (
+                        <ArtistListing
+                          key={`${act.name}-desktop`}
+                          name={act.name}
+                          bio={act.bio}
+                          type="live"
+                          isGate={act.isGate}
+                        />
+                      );
+                    })}
+                  </div>
+                  <div className="mb-12 text-xl">
+                    <p>DJ ////////////////////////////////////</p>
+                    {djActs.map((act) => {
+                      return (
+                        <ArtistListing
+                          key={`${act.name}-desktop`}
+                          name={act.name}
+                          bio={act.bio}
+                          type="dj"
+                          isGate={act.isGate}
+                        />
+                      );
+                    })}
                   </div>
                   <div className="mb-8 text-xl">
-                    <p>DJ /////////////////////</p>
-                    <p>Proc Fiskal</p>
-                    <p>Demetzy</p>
-                    <p>Medallion Man</p>
-                    <div className="flex">
-                      <p>Overneath</p>
-                      <img src="/logo.png" className="inline h-[32px]" />
-                    </div>
+                    <p>INSTALLATIONS /////////////////////////</p>
+                    {installationArtists.map((act) => {
+                      return (
+                        <ArtistListing
+                          key={`${act.name}-desktop`}
+                          name={act.name}
+                          bio={act.bio}
+                          type="other"
+                          isGate={act.isGate}
+                        />
+                      );
+                    })}
                   </div>
                   <div className="mb-8 text-xl">
-                    <p>INSTALLATIONS ////////////</p>
-                    <p>Tabitha Weddell</p>
-                    <p>Baos</p>
-                    <div className="flex">
-                      <p>Martha</p>
-                      <img src="/logo.png" className="inline h-[32px]" />
-                    </div>
-                    <div className="flex">
-                      <p>Ella Ex Machina</p>
-                      <img src="/logo.png" className="inline h-[32px]" />
-                    </div>
-                  </div>
-                  <div className="mb-8 text-xl">
-                    <p>PROJECTIONS //////////////</p>
-                    <p>Visuals Ru</p>
+                    <p>PROJECTIONS ///////////////////////////</p>
+                    {visualsArtists.map((act) => {
+                      return (
+                        <ArtistListing
+                          key={`${act.name}-desktop`}
+                          name={act.name}
+                          bio={act.bio}
+                          type="other"
+                          isGate={act.isGate}
+                        />
+                      );
+                    })}
                   </div>
                   <div className="mb-8 text-xl">
                     <p>STALLS & WORKSHOPS ////////////////////</p>
-                    <p>Isn'tses</p>
-                    <p>Engineer</p>
+                    {workshopArtists.map((act) => {
+                      return (
+                        <ArtistListing
+                          key={`${act.name}-desktop`}
+                          name={act.name}
+                          bio={act.bio}
+                          type="other"
+                          isGate={act.isGate}
+                        />
+                      );
+                    })}
                   </div>
                   <p className="text-lg mb-8">
                     Home cooked vegan food will be available from 4-8pm.
                   </p>
-                  <p className="text-lg">//////////////////////////</p>
+                  <p className="text-xl">
+                    //////////////////////////////////////
+                  </p>
                 </div>
               </div>
               <div className="flex items-center mt-8">
@@ -289,60 +313,77 @@ export default function Home() {
                   </WordRepeat>
                 </h2>
                 <div>
-                  <div className="mb-8 text-xl">
+                  <div className="mb-12 text-xl">
                     <p>LIVE ELECTRONIC MUSIC ////////////////</p>
-                    <p>Jena Jang</p>
-                    <p>Gus Cantor</p>
-                    <p>Jack Dove</p>
-                    <p>Mi yá</p>
-                    <p>Cold Light</p>
-                    <div className="flex">
-                      <p>Seshtan</p>
-                      <img src="/logo.png" className="inline h-[32px]" />
-                    </div>
-                    <div className="flex">
-                      <p>
-                        Internal Object
-                        <img src="/logo.png" className="inline h-[32px]" /> +
-                        Silkenste
-                      </p>
-                    </div>
-                    <div className="flex">
-                      <p>Lissener</p>
-                      <img src="/logo.png" className="inline h-[32px]" />
-                    </div>
+                    {LiveActs.map((act) => {
+                      return (
+                        <ArtistListing
+                          key={`${act.name}-desktop`}
+                          name={act.name}
+                          bio={act.bio}
+                          type="live"
+                          isGate={act.isGate}
+                          imageUrl={act.imageUrl}
+                          imageCredit={act.imageCredit}
+                        />
+                      );
+                    })}
                   </div>
-                  <div className="mb-8 text-xl">
+                  <div className="mb-12 text-xl">
                     <p>DJ ////////////////////////////////////</p>
-                    <p>Proc Fiskal</p>
-                    <p>Demetzy</p>
-                    <p>Medallion Man</p>
-                    <div className="flex">
-                      <p>Overneath</p>
-                      <img src="/logo.png" className="inline h-[32px]" />
-                    </div>
+                    {djActs.map((act) => {
+                      return (
+                        <ArtistListing
+                          key={`${act.name}-desktop`}
+                          name={act.name}
+                          bio={act.bio}
+                          type="dj"
+                          isGate={act.isGate}
+                        />
+                      );
+                    })}
                   </div>
                   <div className="mb-8 text-xl">
                     <p>INSTALLATIONS /////////////////////////</p>
-                    <p>Tabitha Weddell</p>
-                    <p>Baos</p>
-                    <div className="flex">
-                      <p>Martha</p>
-                      <img src="/logo.png" className="inline h-[32px]" />
-                    </div>
-                    <div className="flex">
-                      <p>Ella Ex Machina</p>
-                      <img src="/logo.png" className="inline h-[32px]" />
-                    </div>
+                    {installationArtists.map((act) => {
+                      return (
+                        <ArtistListing
+                          key={`${act.name}-desktop`}
+                          name={act.name}
+                          bio={act.bio}
+                          type="other"
+                          isGate={act.isGate}
+                        />
+                      );
+                    })}
                   </div>
                   <div className="mb-8 text-xl">
                     <p>PROJECTIONS ///////////////////////////</p>
-                    <p>Visuals Ru</p>
+                    {visualsArtists.map((act) => {
+                      return (
+                        <ArtistListing
+                          key={`${act.name}-desktop`}
+                          name={act.name}
+                          bio={act.bio}
+                          type="other"
+                          isGate={act.isGate}
+                        />
+                      );
+                    })}
                   </div>
                   <div className="mb-8 text-xl">
                     <p>STALLS & WORKSHOPS ////////////////////</p>
-                    <p>Isn'tses</p>
-                    <p>Engineer</p>
+                    {workshopArtists.map((act) => {
+                      return (
+                        <ArtistListing
+                          key={`${act.name}-desktop`}
+                          name={act.name}
+                          bio={act.bio}
+                          type="other"
+                          isGate={act.isGate}
+                        />
+                      );
+                    })}
                   </div>
                   <p className="text-lg mb-8">
                     Home cooked vegan food will be available from 4-8pm.
