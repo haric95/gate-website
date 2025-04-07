@@ -51,13 +51,6 @@ export const LiveActs: ArtistListing[] = [
     imageUrl: "/images/lineup/seshtan.webp",
   },
   {
-    name: "Internal Object + Silkenste",
-    type: "live",
-    bio: "Embodiment of psychophysical inner dialogues traced in space-time through movement. Exploring layers of the subconscious through a reactive chain of repetitive actions led by instinct. An experimental audiovisual game between agency and passivity, dissolving into memory and dreams.",
-    isGate: true,
-    imageUrl: "/images/lineup/internalobjectsilkenste.webp",
-  },
-  {
     name: "Lissener",
     type: "live",
     bio: `Lissener hispert me, "What is it? Be they terning be they moving?" \n
@@ -66,6 +59,13 @@ Lissener hispert, "Whats the matter?"\n
 I hispert back, "O what we ben! And what we come to!" Boath of us wer sniffling and snuffling then. Me looking at them jynt machines and him lissening ther sylents. Right then I dint know where I wer with any thing becaws all on a suddn I wernt seeing any thing from where I seen it befor.`,
     isGate: true,
     imageUrl: "/images/lineup/lissener.webp",
+  },
+  {
+    name: "Internal Object + Silkenste",
+    type: "live",
+    bio: "Embodiment of psychophysical inner dialogues traced in space-time through movement. Exploring layers of the subconscious through a reactive chain of repetitive actions led by instinct. An experimental audiovisual game between agency and passivity, dissolving into memory and dreams.",
+    isGate: true,
+    imageUrl: "/images/lineup/internalobjectsilkenste.webp",
   },
 ];
 
@@ -81,6 +81,8 @@ export const djActs: ArtistListing[] = [
     type: "dj",
     bio: `Demetzy is the co-founder of Corefusion, London’s only club night devoted to breakcore. Growing up in the free parties of the mountains of North Wales and breakcore squat parties in London, Demetzy is all about the unusual and unexpected.\n\n\Expect the blending of all things fast, broken but always banging. Get ready to answer the call of the weird…`,
     isGate: false,
+    imageUrl: "/images/lineup/corefusion.webp",
+    imageCredit: "Photo: Bangface",
   },
   {
     name: "Medallion Man",
@@ -93,6 +95,7 @@ export const djActs: ArtistListing[] = [
     type: "dj",
     bio: `Fish queen, dubstep fairy, PhDJ. Overneath has escaped the depths of Cambridge to help you all dissociate `,
     isGate: true,
+    imageUrl: "/images/lineup/overneath.webp",
   },
 ];
 
@@ -102,12 +105,14 @@ export const installationArtists: ArtistListing[] = [
     type: "installation",
     bio: `Tabitha is a visual artist living and working in South London. Their practice’s approach is sustainability conscious - this has led tabitha to digging and foraging wild clay, and using plant, shell, bone and other organic matter to create ash glazes.\m\nTheir work often explores themes of protection and defence, utilising delicate materials in place of traditionally durable ones.\n\nINSTAGRAM: @wabithateddell`,
     isGate: false,
+    imageUrl: "/images/lineup/tabithaweddell.webp",
   },
   {
     name: "Baos",
     type: "installation",
     bio: `From an illustrative and visual background Baos has been working as a freelancer in London since 2016. While living and being involved in the organisation of multiple events at the now-defunct warehouse Unit D4 (RIP), Baos had the chance to experiment and evolve his approach to traditionally flat illustrations and visual imagery, experimenting with a more immersive approach.\n\nHis installations reintroduce a visual element to the auditory experience, crafting immersive environments where attendees become key players in the night.\n\nFor the next GATE event, Baos is forging a new installation. Details are hushed for now. Come and be part of something memorable.`,
     isGate: false,
+    imageUrl: "/images/lineup/baos.webp",
   },
   {
     name: "Martha",
@@ -120,6 +125,7 @@ export const installationArtists: ArtistListing[] = [
     type: "installation",
     bio: `Ella is a member of GATE and a 3d artist, making both virtual artwork and 3d printed art and fashion. Today she has designed and made custom jewellery for the DJ decks.\n\nHer Instagram is: @ellaexmachina `,
     isGate: true,
+    imageUrl: "/images/lineup/ellaexmachina.webp",
   },
 ];
 
@@ -129,6 +135,7 @@ export const visualsArtists: ArtistListing[] = [
     type: "installation",
     bio: `Visual Ru is a multi-media visual performer exploring image production and representation through playful kinetic sculptures. Using tactile materials, live-feed video, projectors, and kinetic light installations, Ru creates dynamic hybrid spaces.\n\nHis process embraces real-time improvisation, manipulating forms and light with his hands and motorized platforms to produce immersive, ever-evolving visuals.`,
     isGate: false,
+    imageUrl: "/images/lineup/visualsru.webp",
   },
 ];
 
@@ -136,7 +143,13 @@ export const workshopArtists: ArtistListing[] = [
   {
     name: "Engineer",
     type: "installation",
-    bio: `An interactive beginners workshop on modular synthesisers, how they can be used to make music, and improvise live.`,
+    bio: `An interactive, beginner-friendly workshop on the fundamentals of modular synthesis—covering signal flow, patching techniques, and how to create and manipulate sound for both structured composition and live improvisation.\n\nLed by Engineer (@engineer_newg).`,
+    isGate: false,
+    imageUrl: "/images/lineup/engineer.webp",
+  },
+  {
+    name: "Isnt'ses",
+    type: "installation",
     isGate: false,
   },
 ];

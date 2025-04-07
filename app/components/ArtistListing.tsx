@@ -5,6 +5,7 @@ import AnimateHeight from "react-animate-height";
 import { AnimatePresence, motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { DEFAULT_TRANSITION } from "../consts";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 type ArtistListingProps = {
   name: string;
@@ -40,11 +41,15 @@ export const ArtistListing = ({
     reset();
   };
 
+  const isMobile = useIsMobile();
+
+  const isGabby = name === "Internal Object + Silkenste";
+
   return (
     <AnimateHeight
       id="example-panel"
       duration={400}
-      height={isOpen ? "auto" : 36} // see props documentation below
+      height={isOpen ? "auto" : isGabby ? 72 : 36} // see props documentation below
       className={`w-full`}
     >
       <button
@@ -54,7 +59,7 @@ export const ArtistListing = ({
         }}
       >
         <div className="flex">
-          <p className="microgramma flex items-center h-[32px]">
+          <p className={`microgramma flex items-center text-left md:text-xl`}>
             {!!bio &&
               (isOpen ? (
                 <span style={{ transform: "translate(4px, -2px)" }}>
@@ -67,7 +72,7 @@ export const ArtistListing = ({
               ? name.split("").map((char, index) => {
                   return (
                     <span
-                      className={`font-mono ${count >= index ? "textoutline text-[24px]" : "font-mono"} ${type === "live" ? "green" : type === "dj" ? "blue" : "red"} ${index === 0 && "pl-3"}`}
+                      className={`font-mono ${count >= index ? "textoutline text-[24px]" : "font-mono"} ${type === "live" ? "green" : type === "dj" ? "blue" : "red"} ${index === 0 && "pl-3"} ${isGabby && isMobile && "text-sm"}`}
                     >
                       <LetterPositioning>{char}</LetterPositioning>
                     </span>
@@ -90,8 +95,12 @@ export const ArtistListing = ({
                     transition: { delay: 0.25, duration: 0.5 },
                   }}
                   exit={{ opacity: 0, transition: { duration: 0.7 } }}
+                  className="w-full"
                 >
-                  <img src={imageUrl} className={`ml-5 h-64 w-auto"}`} />
+                  <img
+                    src={imageUrl}
+                    className={`pl-5 md:h-64 md:w-auto h-auto w-full`}
+                  />
                   <p className="text-left text-xs text-shadow-none pl-5 mb-2">
                     {imageCredit}
                   </p>

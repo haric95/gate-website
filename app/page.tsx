@@ -135,7 +135,7 @@ export default function Home() {
                 </h2>
                 <div>
                   <div className="mb-12 text-xl">
-                    <p>LIVE ELECTRONIC MUSIC ////////////////</p>
+                    <p>LIVE ELECTRONIC MUSIC //</p>
                     {LiveActs.map((act) => {
                       return (
                         <ArtistListing
@@ -144,12 +144,14 @@ export default function Home() {
                           bio={act.bio}
                           type="live"
                           isGate={act.isGate}
+                          imageCredit={act.imageCredit}
+                          imageUrl={act.imageUrl}
                         />
                       );
                     })}
                   </div>
                   <div className="mb-12 text-xl">
-                    <p>DJ ////////////////////////////////////</p>
+                    <p>DJ /////////////////////</p>
                     {djActs.map((act) => {
                       return (
                         <ArtistListing
@@ -158,12 +160,14 @@ export default function Home() {
                           bio={act.bio}
                           type="dj"
                           isGate={act.isGate}
+                          imageCredit={act.imageCredit}
+                          imageUrl={act.imageUrl}
                         />
                       );
                     })}
                   </div>
                   <div className="mb-8 text-xl">
-                    <p>INSTALLATIONS /////////////////////////</p>
+                    <p>INSTALLATIONS //////////</p>
                     {installationArtists.map((act) => {
                       return (
                         <ArtistListing
@@ -172,12 +176,14 @@ export default function Home() {
                           bio={act.bio}
                           type="other"
                           isGate={act.isGate}
+                          imageCredit={act.imageCredit}
+                          imageUrl={act.imageUrl}
                         />
                       );
                     })}
                   </div>
                   <div className="mb-8 text-xl">
-                    <p>PROJECTIONS ///////////////////////////</p>
+                    <p>PROJECTIONS ////////////</p>
                     {visualsArtists.map((act) => {
                       return (
                         <ArtistListing
@@ -186,12 +192,14 @@ export default function Home() {
                           bio={act.bio}
                           type="other"
                           isGate={act.isGate}
+                          imageCredit={act.imageCredit}
+                          imageUrl={act.imageUrl}
                         />
                       );
                     })}
                   </div>
                   <div className="mb-8 text-xl">
-                    <p>STALLS & WORKSHOPS ////////////////////</p>
+                    <p>STALLS & WORKSHOPS /////</p>
                     {workshopArtists.map((act) => {
                       return (
                         <ArtistListing
@@ -200,6 +208,8 @@ export default function Home() {
                           bio={act.bio}
                           type="other"
                           isGate={act.isGate}
+                          imageCredit={act.imageCredit}
+                          imageUrl={act.imageUrl}
                         />
                       );
                     })}
@@ -207,9 +217,7 @@ export default function Home() {
                   <p className="text-lg mb-8">
                     Home cooked vegan food will be available from 4-8pm.
                   </p>
-                  <p className="text-xl">
-                    //////////////////////////////////////
-                  </p>
+                  <p className="text-xl">/////////////////////// </p>
                 </div>
               </div>
               <div className="flex items-center mt-8">
@@ -339,6 +347,8 @@ export default function Home() {
                           bio={act.bio}
                           type="dj"
                           isGate={act.isGate}
+                          imageCredit={act.imageCredit}
+                          imageUrl={act.imageUrl}
                         />
                       );
                     })}
@@ -353,6 +363,8 @@ export default function Home() {
                           bio={act.bio}
                           type="other"
                           isGate={act.isGate}
+                          imageCredit={act.imageCredit}
+                          imageUrl={act.imageUrl}
                         />
                       );
                     })}
@@ -367,6 +379,8 @@ export default function Home() {
                           bio={act.bio}
                           type="other"
                           isGate={act.isGate}
+                          imageCredit={act.imageCredit}
+                          imageUrl={act.imageUrl}
                         />
                       );
                     })}
@@ -381,6 +395,8 @@ export default function Home() {
                           bio={act.bio}
                           type="other"
                           isGate={act.isGate}
+                          imageCredit={act.imageCredit}
+                          imageUrl={act.imageUrl}
                         />
                       );
                     })}
