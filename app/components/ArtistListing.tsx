@@ -49,7 +49,7 @@ export const ArtistListing = ({
     <AnimateHeight
       id="example-panel"
       duration={400}
-      height={isOpen ? "auto" : isGabby ? 72 : 36} // see props documentation below
+      height={isOpen ? "auto" : isGabby && isMobile ? 72 : 36} // see props documentation below
       className={`w-full`}
     >
       <button
@@ -60,7 +60,7 @@ export const ArtistListing = ({
       >
         <div className="flex items-center">
           <p
-            className={`microgramma flex items-center text-left md:text-xl ${isGabby ? "h-16" : "h-8"}`}
+            className={`microgramma flex items-center text-left md:text-xl ${isGabby && isMobile ? "h-16" : "h-8"}`}
           >
             {!!bio &&
               (isOpen ? (
