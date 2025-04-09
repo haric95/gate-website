@@ -38,6 +38,10 @@ export default ({ amount }: TicketWidgetProps) => {
   }, [amount]);
 
   const handleSubmit = async ({ email, mailingList, name }: Form) => {
+    if (loading) {
+      return;
+    }
+
     setLoading(true);
 
     if (!stripe || !elements) {
